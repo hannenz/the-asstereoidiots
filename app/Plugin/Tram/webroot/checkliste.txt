@@ -1,0 +1,9 @@
+Checkliste:
+
+
+(JS und CSS komprimieren)
+(Unbenutze Assets löschen)
+
+Homepage und Facebook
+Konzerttermine eintragen
+

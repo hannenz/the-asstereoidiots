@@ -1,0 +1,251 @@
+.input.file.uploader {
+	padding:0;
+	margin:0;
+	position:relative;
+}
+
+div.input.file.uploader input {
+	width:100%;
+	margin:0;
+	padding:0;
+	font-size:14px;
+}
+
+.uploader-list {
+	font-family:Verdana, sans;
+	font-size:11px;
+	color:#333;
+	line-height:1.2em;
+	overflow:hidden;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.uploader-list li {
+	overflow:hidden;
+	border-radius:4px;
+	margin:0;
+	padding:6px;
+	position:relative;
+	background:#fff;
+	background:-moz-linear-gradient(#fff, #f0f0f0);
+	background:-webkit-linear-gradient(#fff, #f0f0f0);
+	background:-o-linear-gradient(#fff, #f0f0f0);
+	background:linear-gradient(#fff, #f0f0f0);
+	border:1px solid #ccc;
+	margin:0 4px 4px 0;
+}
+
+.uploader-list li div.input.checkbox {
+	width:12px;
+	float:left;
+	margin:0 8px 0 0;
+	padding:0;
+}
+
+.uploader-list li img {
+	width:48px;
+	float:left;
+	margin:0 8px 0 0;
+	display:block;
+}
+
+.uploader-list dl {
+	width:70%;
+	margin:0;
+	float:left;
+}
+
+.uploader-list dt, .uploader-list dd {
+	margin:0;
+	padding:0;
+}
+
+.uploader-list dt {
+	display:none;
+}
+
+.uploader-pos {
+	display:none;
+}
+
+
+.uploader-list-actions {
+	list-style-type:none;
+	clear:both;
+	overflow:hidden;
+	width:16px;
+	float:right;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:6px;
+	top:6px;
+	z-index:10;
+}
+.uploader-list-actions li {
+	float:none;
+	border:none;
+	width:16px;
+	margin:0;
+	padding:0;
+}
+
+.uploader-list-actions a {
+	display:block;
+	width:16px;
+	height:16px;
+	text-indent:-100px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	margin:0;
+	padding:0;
+}
+
+.uploader-list-actions a.uploader-list-edit { background-image:url('/uploader/img/edit.png'); }
+.uploader-list-actions a.uploader-list-up { background-image:url('/uploader/img/up.png'); }
+.uploader-list-actions a.uploader-list-down { background-image:url('/uploader/img/down.png'); }
+.uploader-list-actions a.uploader-list-delete { background-image:url('/uploader/img/delete.png'); }
+
+.uploader-list li.first-child a.uploader-list-up { display:none; }
+.uploader-list li.last-child a.uploader-list-down { display:none; }
+
+
+
+
+.uploader-info {
+	font-family:Verdana,sans;
+	font-size:11px;
+	line-height:1em;
+	color:#888;
+}
+.uploader-info * {
+	margin:0;
+	padding:0;
+}
+
+
+.uploader-queue {
+	width:80%;
+	list-style-type:none;
+	font-size:11px;
+	font-family:Verdana, sans;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:11;
+	top:0;
+	background:#fff;
+	padding:1.5em;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 5px rgba(30, 30, 30, 0.7);
+}
+
+.uploader-queue li {
+	color:#666;
+	overflow:hidden;
+	padding:0;
+}
+
+.uploader-queue-perc {
+	width:100px;
+	float:right;
+	text-align:right;
+}
+
+.uploader-queue-progressbar {
+	background:#fff;
+	height:6px;
+	margin:4px 0;
+	padding:0;
+	width:90%;
+	float:left;
+}
+
+.uploader-progressbar {
+	height:6px;
+	background:#1E90FF;
+	margin:0;
+	padding:0;
+}
+
+.uploader-queue-cancel-one {
+	display:block;
+	float:left;
+	width:10%;
+	margin:0;
+	padding:0;
+	height:14px;
+	line-height:14px;
+}
+
+.uploader.error {
+	font-weight:bold;
+	color:red;
+}
+
+.uploader.error li {
+	margin:0;
+	border:0;
+	font-weight:normal;
+}
+
+.uploader-status-pending {
+	opacity:0.5;
+}
+.uploader-status-uploading {
+	opacity:1;
+}
+.uploader-queue li.uploader-status-finished .uploader-queue-perc {
+	color:#0f0;
+}
+
+.uploader-list-controls {
+	min-height:1.5em;
+	line-height:1.5em;
+	background:#eee;
+}
+
+.uploader-list-controls.busy {
+	background:#eee url('/uploader/img/loading.gif') no-repeat 98% 50%;
+	border:1px solid #red;
+}
+
+
+.uploader-list-controls a {
+	font-family:Verdana,sans-serif;
+	font-size:11px;
+	text-decoration:none;
+	color:#666;
+	font-weight:normal;
+	display:inline-block;
+	margin:0 1em 0 0;
+}
+
+li.custom_element {
+	width: 90px;
+	float:left;
+	margin:0 4px 4px 0;
+}
+
+li.custom_element img {
+	width:64px;
+}
+
+
+.uploader-queue-cancelled .uploader-queue-filename {
+	color:#f00;
+	text-decoration:line-through;
+}
+
+.uploader-queue-nr:before {
+	content:'#';
+}
+.uploader-queue-nr:after {
+	content:'/';
+}
+.uploader-queue-total {
+	margin-right:4px;
+}

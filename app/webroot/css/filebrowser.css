@@ -1,0 +1,46 @@
+body {
+	font-family:Verdana,sans-serif;
+	font-size:13px;
+	line-height:1.3em;
+	color:#333;
+}
+
+a, a:hover, a:visited, a:focus, a:active {
+	color:#666;
+}
+table {
+	border-collapse:collapse;
+	border:1px solid #ccc;
+	border-radius:5px;
+	background:#eee;
+	background:-moz-linear-gradient(#eee, #f8f8f8);
+	background:-webkit-linear-gradient(#eee, #f8f8f8);
+	background:-o-linear-gradient(#eee, #f8f8f8);
+	background:linear-gradient(#eee, #f8f8f8);
+}
+
+thead tr {
+	background:#eee;
+	border-bottom:1px solid #fff;
+	line-height:30px;
+}
+
+td, th {
+	text-align:left;
+	vertical-align:top;
+	padding:6px;
+	border-left:1px solid #fff;
+}
+
+img {
+	width:32px;
+}
+
+tr:nth-child(even) {
+	background:#fff;
+}
+
+caption {
+	text-align:left;
+	font-weight:bold;
+}

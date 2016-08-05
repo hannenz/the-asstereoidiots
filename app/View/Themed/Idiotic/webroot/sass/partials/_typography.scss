@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?iefix') format('eot'),
+    url('../fonts/BebasNeue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('../fonts/ballpark_weiner-webfont.eot');
+    src: url('../fonts/ballpark_weiner-webfont.eot?iefix') format('eot'),
+    url('../fonts/ballpark_weiner-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TitilliumText22LRegular';
+    src: url('../fonts/TitilliumText22L003-webfont.eot');
+    src: url('../fonts/TitilliumText22L003-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TitilliumText22L003-webfont.woff') format('woff'),
+    url('../fonts/TitilliumText22L003-webfont.ttf') format('truetype'),
+    url('../fonts/TitilliumText22L003-webfont.svg#TitilliumText22LRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:'Slabo 27px';
+    font-size:100%;
+    line-height:1.5em;
+    color:$text-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'BebasNeueRegular';
+    text-transform:uppercase;
+    color:$headline-color;
+    font-weight:400;
+}
+
+p {
+    margin: 0 0 1.5em 0;
+}

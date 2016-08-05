@@ -1,0 +1,23 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background:#ccc;
+}
+
+body {
+	width:19cm;
+	height:27cm;
+	margin:0 auto;
+	background:#fff;
+	font-size:1cm;
+	font-weight:bold;
+	font-family:Georgia;
+	color:#333;
+}
+
+td {
+	padding: 0.25cm 0.5cm;
+}

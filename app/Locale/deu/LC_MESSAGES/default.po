@@ -1,0 +1,1751 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Asstereoidiots Website\n"
+"POT-Creation-Date: 2011-04-14 13:14+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Johannes Braun <hannenz@freenet.de>\n"
+"Language-Team:  <me@hannenz.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /app_controller.php:108
+msgid "The file you tried to upload is too large"
+msgstr "Die Datei zum Hochladen ist zu groß"
+
+#: /app_controller.php:111
+msgid "The file couldn't be uploaded completely"
+msgstr "Die Datei konnte nicht komplett hochgeladen werden"
+
+#: /app_controller.php:114
+msgid "No file to upload given"
+msgstr "Keine Datei zum Hochladen angegeben"
+
+#: /config/plugin_rating.php:31
+#: /plugins/rating/config/plugin_rating.php:31
+msgid "Your rating has been saved."
+msgstr "Deine Bewertung wurde gespeichert."
+
+#: /config/plugin_rating.php:170
+#: /plugins/rating/config/plugin_rating.php:170
+msgid "Please login to rate"
+msgstr "Bitte anmelden zum bewerten"
+
+#: /config/plugin_rating.php:171
+#: /plugins/rating/config/plugin_rating.php:171
+msgid "Thanks for your rating"
+msgstr "Danke fürs bewerten"
+
+#: /config/plugin_rating.php:172
+#: /plugins/rating/config/plugin_rating.php:172
+msgid "Click to remove your rating"
+msgstr "Klicken um deine Bewertung zu löschen"
+
+#: /config/plugin_rating.php:173
+#: /plugins/rating/config/plugin_rating.php:173
+msgid "Really bad"
+msgstr "Sehr schlecht"
+
+#: /config/plugin_rating.php:174
+#: /plugins/rating/config/plugin_rating.php:174
+msgid "Bad"
+msgstr "Schlecht"
+
+#: /config/plugin_rating.php:175
+#: /plugins/rating/config/plugin_rating.php:175
+msgid "Average"
+msgstr "Mittel"
+
+#: /config/plugin_rating.php:176
+#: /plugins/rating/config/plugin_rating.php:176
+msgid "Good"
+msgstr "Gut"
+
+#: /config/plugin_rating.php:177
+#: /plugins/rating/config/plugin_rating.php:177
+msgid "Really good"
+msgstr "Sehr gut"
+
+#: /controllers/blog_posts_controller.php:77
+msgid "Post has been saved!"
+msgstr "Post wurde gespeichert!"
+
+#: /controllers/blog_posts_controller.php:82;106
+msgid "Failed to save the post"
+msgstr "Fehler beim Speichern des Posts"
+
+#: /controllers/blog_posts_controller.php:102
+msgid "The post has been saved"
+msgstr "Post wurde gespeichert"
+
+#: /controllers/blog_posts_controller.php:119
+msgid "Post has been deleted successfully"
+msgstr "Post wurde gelöscht"
+
+#: /controllers/blog_posts_controller.php:123
+msgid "Failed to delete this post"
+msgstr "Fehler beim Löschen des Posts"
+
+#: /controllers/comments_controller.php:61
+msgid "Your comment has been saved. Thanks for commenting"
+msgstr "Dein Kommentar wurde gespeichert, vielen Dank!"
+
+#: /controllers/comments_controller.php:62
+msgid "Thanks for commenting. Your comment has been saved and will be published after we have approved it."
+msgstr "Danke für Deinen Kommentar. Dein Kommentar wurde gespeichert und wird veröffentlicht, sobald wir ihn geprüft haben."
+
+#: /controllers/comments_controller.php:76
+msgid "Your comment could not been saved. Please check the form and try again"
+msgstr "Dein Kommentar konnte nicht gespeichert werden. Bitte prüfe das Formular und versuch es noch einmal"
+
+#: /controllers/comments_controller.php:86
+msgid "Comment has been saved."
+msgstr "Kommentar wurde gespeichert"
+
+#: /controllers/comments_controller.php:90
+msgid "Comment could not been saved. Please check the form and try again"
+msgstr "Kommentar konnte nicht gespeichert werden. Bitte prüfe das Formular und versuch es noch einmal"
+
+#: /controllers/comments_controller.php:112
+msgid "Comment has been deleted"
+msgstr "Kommentar wurde gelöscht"
+
+#: /controllers/comments_controller.php:115
+msgid "Failed to delete comment"
+msgstr "Fehler beim Löschen des Kommentars"
+
+#: /controllers/event_users_controller.php:65
+msgid "Event could not been confirmed"
+msgstr "Ereignis konnte nicht bestätigt werden"
+
+#: /controllers/events_controller.php:75;125
+msgid "Event has been saved"
+msgstr "Ereignis wurde gespeichert"
+
+#: /controllers/events_controller.php:93;144
+msgid "Event could not been saved"
+msgstr "Ereignis konnte nicht gespeichert werden"
+
+#: /controllers/events_controller.php:112
+msgid "You cannot edit an event that you haven't created"
+msgstr "Du kannst kein Ereignis bearbeiten, das du nicht erstellt hast"
+
+#: /controllers/events_controller.php:175
+msgid "Event has been deleted"
+msgstr "Ereignis wurde gelöscht"
+
+#: /controllers/events_controller.php:190
+msgid "Event could not been deleted"
+msgstr "Ereignis konte nicht gelöscht werden"
+
+#: /controllers/events_controller.php:194
+msgid "You cannot delete a event that you have not created"
+msgstr "Du kannst kein Ereignis löschen, das du nicht erstellt hast"
+
+#: /controllers/links_controller.php:28;44
+msgid "The Link has been saved"
+msgstr "Link wurde gespeichert"
+
+#: /controllers/links_controller.php:32;48
+msgid "Failed to save the link"
+msgstr "Fehler beim Speichern des Links"
+
+#: /controllers/links_controller.php:55
+msgid "The Link has been deleted"
+msgstr "Link wurde gespeichert"
+
+#: /controllers/links_controller.php:58
+msgid "Failed to delete the link"
+msgstr "Fehler beim Speichern des Links"
+
+#: /controllers/messages_controller.php:63;82
+msgid "Message has been sent"
+msgstr "Nachricht wurde verschickt:"
+
+#: /controllers/messages_controller.php:67;86
+msgid "Message could not been sent. Check the form and try again"
+msgstr "Nachricht konnte nicht gespeichert werden. Prüfe das Formular und versuch es noch einmal"
+
+#: /controllers/messages_controller.php:72
+msgid "Choose at least one recipient"
+msgstr "Bitte mindestens einen Empfänger wählen"
+
+#: /controllers/messages_controller.php:99
+msgid "Message has been deleted."
+msgstr "Nachricht wurde gelöscht"
+
+#: /controllers/messages_controller.php:102
+msgid "Message could not been deleted."
+msgstr "Nachricht konnte nicht gelöscht werden"
+
+#: /controllers/playlists_controller.php:66
+msgid "Building playlist failed"
+msgstr "Erstellen der Playlist ist fehlgeschlagen"
+
+#: /controllers/releases_controller.php:76;109
+msgid "Release has been saved"
+msgstr "Release wurde gespeichert"
+
+#: /controllers/releases_controller.php:80;113
+msgid "Release could not been saved"
+msgstr "Release konnte nicht gespeichert werden"
+
+#: /controllers/releases_controller.php:131
+msgid "Release has been deleted"
+msgstr "Release wurde gelöscht"
+
+#: /controllers/releases_controller.php:134
+msgid "Release could not been deleted"
+msgstr "Release konnte nicht gespeichert werden"
+
+#: /controllers/setlists_controller.php:52;64
+msgid "Setlist has been saved"
+msgstr "Setliste wurde gespeichert!"
+
+#: /controllers/setlists_controller.php:56;68
+msgid "Setlist could not been saved"
+msgstr "Setliste konnte nicht gespeichert werden"
+
+#: /controllers/setlists_controller.php:78
+msgid "Setlist has been deleted"
+msgstr "Setliste wurde gelöscht"
+
+#: /controllers/setlists_controller.php:81
+msgid "Setlist could notbeen deleted"
+msgstr "Setliste konnte nicht gespeichert werden"
+
+#: /controllers/settings_controller.php:8
+#: /controllers/users_controller.php:36
+msgid "Settings have been saved"
+msgstr "Einstellungen wurden gespeichert"
+
+#: /controllers/settings_controller.php:12
+#: /controllers/users_controller.php:40
+msgid "Settings could not been saved"
+msgstr "Einstellungen konnten nicht gespeichert werden"
+
+#: /controllers/shows_controller.php:161;234
+msgid "Failed to save show"
+msgstr "Konzert konnte nicht gespeichert werden"
+
+#: /controllers/shows_controller.php:166;179
+msgid "No setlist"
+msgstr "Keine Setlist"
+
+#: /controllers/songlists_controller.php:11
+msgid "Songlist has been saved"
+msgstr "Songlist wurde gespeichert!"
+
+#: /controllers/songlists_controller.php:15
+msgid "Songlist could not been saved"
+msgstr "Songlist konnte nicht gespeichert werden"
+
+#: /controllers/songs_controller.php:50;63
+msgid "Song has been saved"
+msgstr "Song wurde gespeichert!"
+
+#: /controllers/songs_controller.php:54;67
+msgid "Song could not been saved"
+msgstr "Song konnte nicht gespeichert werden"
+
+#: /controllers/songs_controller.php:77
+msgid "Song has been deleted"
+msgstr "Song wurde gelöscht"
+
+#: /controllers/songs_controller.php:80
+msgid "Song could not been deleted"
+msgstr "Song konnte nicht gelöscht werden"
+
+#: /controllers/tracklists_controller.php:11
+msgid "Tracklist has been saved"
+msgstr "Trackliste wurde gespeichert"
+
+#: /controllers/tracklists_controller.php:15
+msgid "Tracklist could not been saved"
+msgstr "Trackliste konnte nicht gespeichert werden"
+
+#: /controllers/tracklists_controller.php:60
+#: /views/shows/admin_add.ctp:36
+#: /views/shows/admin_edit.ctp:46
+#: /views/shows/admin_index.ctp:14
+#: /views/shows/admin_view.ctp:27
+#: /views/shows/detail.ctp:49
+#: /views/shows/view.ctp:55
+#: /views/songlists/admin_edit.ctp:24
+msgid "Setlist"
+msgstr "Setlist"
+
+#: /controllers/tracklists_controller.php:63
+#: /views/users/admin_dashboard.ctp:33
+msgid "Playlist"
+msgstr "Playlist"
+
+#: /controllers/tracks_controller.php:33;58
+msgid "Track has been saved"
+msgstr "Track wurde gespeichert"
+
+#: /controllers/tracks_controller.php:37
+msgid "Track could not been saved"
+msgstr "Track konnte nicht gespeichert werden"
+
+#: /controllers/tracks_controller.php:62
+msgid "Track could not been saved. Please check the form and try again"
+msgstr "Track konnte nicht gespeichert werden. Bitte prüfe das Formular und versuche es erneut"
+
+#: /controllers/tracks_controller.php:76
+msgid "Track has been deleted"
+msgstr "Track wurde gelöscht"
+
+#: /controllers/tracks_controller.php:79
+msgid "Failed to delete track"
+msgstr "Fehler beim Löschen des Trackss"
+
+#: /controllers/users_controller.php:55
+msgid "Password has been saved"
+msgstr "Password wurde gespeichert!"
+
+#: /controllers/users_controller.php:59
+msgid "Password could not been changed"
+msgstr "Passwort  konnte nicht gespeichert werden"
+
+#: /controllers/users_controller.php:63
+msgid "The passwords you have entered do not match"
+msgstr "Die Passwörter die du eingegebn hast stimmen nicht überein"
+
+#: /controllers/videos_controller.php:48
+msgid "Failed to upload poster picture"
+msgstr "Posterbild konnte nicht hochgeladen werden"
+
+#: /controllers/videos_controller.php:90
+msgid "Please enter the Youtube HTML Code to embedd the video"
+msgstr "Bitte den Code zum Einbetten des Youtube Videos eingeben"
+
+#: /controllers/videos_controller.php:101;128
+msgid "Registering video failed. Be sure to upload to /app/webroot/files and try again"
+msgstr "Datei existiert nicht. Lade die Datei in das Verzeichnis /app/webroot/files/ hoch und versuche es noch einmal."
+
+#: /controllers/videos_controller.php:108;135
+msgid "Video has been saved"
+msgstr "Video wurde gespeichert!"
+
+#: /controllers/videos_controller.php:112;139
+msgid "Failed to save video"
+msgstr "Video konnte nicht gespeichert werden"
+
+#: /controllers/videos_controller.php:149
+msgid "Video has been deleted"
+msgstr "Video wurde gelöscht"
+
+#: /controllers/videos_controller.php:152
+msgid "Video colud not been deleted"
+msgstr "Video konnte nicht gespeichert werden"
+
+#: /plugins/js_validate/controllers/js_validate_controller.php:33;39
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr "Debug setting does not allow access to this url."
+
+#: /plugins/js_validate/views/helpers/validation.php:73
+msgid "There was a problem with the field"
+msgstr ""
+
+#: /plugins/js_validate/views/layouts/default.ctp:30
+msgid "CakePHP: the rapid development php framework:"
+msgstr ""
+
+#: /plugins/rating/controllers/ratings_controller.php:119
+msgid "vote"
+msgid_plural "votes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /plugins/rating/views/helpers/rating.php:56
+msgid "Rate it with "
+msgstr "Bewerten mit"
+
+#: /plugins/rating/views/ratings/view.ctp:65;67
+msgid "Vote"
+msgstr "Abstimmen"
+
+#: /views/albums/admin_add.ctp:1
+msgid "New album"
+msgstr "Neues Album"
+
+#: /views/albums/admin_add.ctp:5
+#: /views/albums/admin_edit.ctp:29
+#: /views/bands/admin_index.ctp:27
+#: /views/comments/admin_edit.ctp:6
+#: /views/links/admin_index.ctp:10
+#: /views/locations/admin_index.ctp:28
+#: /views/setlists/admin_index.ctp:10
+msgid "Name"
+msgstr "Name"
+
+#: /views/albums/admin_add.ctp:7
+msgid "Connect show"
+msgstr "Konzert verknüpfen"
+
+#: /views/albums/admin_add.ctp:9
+#: /views/elements/comment.ctp:49
+msgid "submit"
+msgstr "absenden"
+
+#: /views/albums/admin_edit.ctp:1
+msgid "Edit Album"
+msgstr "Album bearbeiten"
+
+#: /views/albums/admin_edit.ctp:27
+#: /views/shows/admin_index.ctp:13
+#: /views/shows/admin_view.ctp:23
+msgid "Album"
+msgstr "Album"
+
+#: /views/albums/admin_edit.ctp:30
+msgid "Connect Show"
+msgstr "Konzert verknüpfen"
+
+#: /views/albums/admin_edit.ctp:32
+msgid "Save Album"
+msgstr "Album speichern"
+
+#: /views/albums/admin_edit.ctp:37
+msgid "Upload Pictures"
+msgstr "Bilder hochladen"
+
+#: /views/albums/admin_edit.ctp:38
+msgid "Upload any Pictures by clicking on the Upload Button. You can select multiple files in the File Dialog by holding down the CTRL- or SHIFT-Key while clicking."
+msgstr "Lade Bilder hoch, indem du auf den Upload Button klickkst. Du kannst mehrere Bilder im Dateiauswahldialog auswählen, indem du die Strg- bzw. Shift-Taste gedrückt hälst."
+
+#: /views/albums/admin_edit.ctp:50
+#: /views/elements/albumteaser.ctp:16
+#: /views/shows/detail.ctp:45
+#: /views/shows/view.ctp:45
+msgid "Pictures"
+msgstr "Bilder"
+
+#: /views/albums/admin_edit.ctp:51
+msgid "You can sort your pics by Drag'n'Drop, delete them or get a detail view by clicking on them"
+msgstr "Du kannst die Bilder per Drag'n'Drop sortieren."
+
+#: /views/albums/admin_edit.ctp:62
+#: /views/shows/admin_add.ctp:22
+#: /views/shows/admin_edit.ctp:34
+msgid "Drop here to delete"
+msgstr "Hier hinziehen zum Löschen"
+
+#: /views/albums/admin_edit.ctp:69
+msgid "View album"
+msgstr "Album ansehen"
+
+#: /views/albums/admin_index.ctp:1
+msgid "Photo Albums"
+msgstr "Fotoalben"
+
+#: /views/albums/admin_index.ctp:2
+msgid "Add Photo Album"
+msgstr "Fotoalbum hinzufügen"
+
+#: /views/albums/admin_index.ctp:9
+#: /views/shows/admin_add.ctp:31
+#: /views/shows/admin_edit.ctp:40
+#: /views/shows/admin_index.ctp:9
+#: /views/shows/admin_view.ctp:20
+msgid "Bill"
+msgstr "Plakat"
+
+#: /views/albums/admin_index.ctp:10
+msgid "name"
+msgstr "Name"
+
+#: /views/albums/admin_index.ctp:11
+#: /views/albums/view.ctp:5
+msgid "Show"
+msgstr "Konzert"
+
+#: /views/albums/admin_index.ctp:12
+#: /views/blog_posts/admin_index.ctp:8
+#: /views/comments/admin_index.ctp:12
+#: /views/elements/video_table.ctp:7
+#: /views/links/admin_index.ctp:12
+#: /views/locations/admin_index.ctp:32
+#: /views/releases/admin_index.ctp:10
+#: /views/setlists/admin_index.ctp:11
+#: /views/shows/admin_index.ctp:16
+#: /views/tracks/admin_index.ctp:18
+msgid "Actions"
+msgstr "Aktionen"
+
+#: /views/albums/index.ctp:1
+msgid "Look at the idiots"
+msgstr "Arschparade"
+
+#: /views/albums/overview.ctp:5
+msgid "back to all albums"
+msgstr "zurück zu den Alben"
+
+#: /views/albums/view.ctp:13
+#: /views/elements/pic.ctp:3
+msgid "previous"
+msgstr "zurück"
+
+#: /views/albums/view.ctp:14
+#: /views/elements/pic.ctp:4
+msgid "next"
+msgstr "weiter"
+
+#: /views/bands/admin_add.ctp:3
+#: /views/bands/admin_index.ctp:4
+msgid "Add Band"
+msgstr "Band hinzufügen"
+
+#: /views/bands/admin_edit.ctp:3
+msgid "Edit Band"
+msgstr "Band bearbeiten"
+
+#: /views/bands/admin_index.ctp:1;20
+#: /views/shows/admin_view.ctp:16
+#: /views/users/admin_dashboard.ctp:9
+msgid "Bands"
+msgstr "Bands"
+
+#: /views/bands/admin_index.ctp:8
+msgid "Search bands"
+msgstr "Band suchen"
+
+#: /views/bands/admin_index.ctp:10
+#: /views/locations/admin_index.ctp:9
+#: /views/songs/admin_index.ctp:10
+msgid "Search"
+msgstr "Suchen"
+
+#: /views/bands/admin_index.ctp:11
+#: /views/locations/admin_index.ctp:10
+msgid "find"
+msgstr "Finden"
+
+#: /views/bands/admin_view.ctp:4
+#: /views/pages/deu/contact.ctp:10
+#: /views/pages/eng/contact.ctp:10
+msgid "Website"
+msgstr "Website"
+
+#: /views/bands/admin_view.ctp:6
+#: /views/locations/admin_view.ctp:13
+#: /views/pages/deu/contact.ctp:1
+#: /views/pages/eng/contact.ctp:1
+msgid "Contact"
+msgstr "Kontakt"
+
+#: /views/bands/admin_view.ctp:8
+#: /views/comments/admin_edit.ctp:7
+#: /views/locations/admin_view.ctp:15
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: /views/bands/admin_view.ctp:10
+#: /views/locations/admin_view.ctp:17
+msgid "Phone"
+msgstr "Telefon"
+
+#: /views/bands/admin_view.ctp:12
+msgid "Genre"
+msgstr "Genre"
+
+#: /views/bands/admin_view.ctp:14
+#: /views/comments/admin_edit.ctp:4;8
+#: /views/comments/admin_index.ctp:9
+#: /views/comments/view.ctp:1
+#: /views/shows/detail.ctp:35
+#: /views/shows/view.ctp:35
+#: /views/songs/admin_view.ctp:7
+msgid "Comment"
+msgstr "Kommentar"
+
+#: /views/bands/admin_view.ctp:17
+#: /views/locations/admin_view.ctp:24
+#: /views/shows/admin_view.ctp:32
+msgid "Created"
+msgstr "Erstellt"
+
+#: /views/bands/admin_view.ctp:19
+#: /views/locations/admin_view.ctp:26
+#: /views/shows/admin_view.ctp:34
+msgid "Modified"
+msgstr "Geändert"
+
+#: /views/bands/admin_view.ctp:21
+#: /views/locations/admin_view.ctp:28
+#: /views/shows/admin_view.ctp:36
+msgid "User"
+msgstr "Benutzer"
+
+#: /views/bands/admin_view.ctp:26
+#: /views/locations/admin_view.ctp:32
+#: /views/shows/admin_index.ctp:1
+#: /views/users/admin_dashboard.ctp:4;7
+msgid "Shows"
+msgstr "Konzerte"
+
+#: /views/bands/admin_view.ctp:46
+#: /views/elements/backlink.ctp:14
+#: /views/locations/admin_view.ctp:51
+#: /views/messages/compose.ctp:28
+#: /views/messages/view.ctp:19
+#: /views/shows/admin_view.ctp:43
+#: /views/songlists/admin_edit.ctp:76
+#: /views/tracklists/admin_edit.ctp:69
+msgid "back"
+msgstr "zurück"
+
+#: /views/bands/admin_view.ctp:47
+#: /views/elements/actions.ctp:9
+#: /views/events/admin_index.ctp:62
+#: /views/locations/admin_view.ctp:52
+#: /views/shows/admin_view.ctp:44
+#: /views/songs/admin_view.ctp:27
+msgid "edit"
+msgstr "bearbeiten"
+
+#: /views/bands/admin_view.ctp:48
+#: /views/elements/actions.ctp:10
+#: /views/events/admin_index.ctp:64
+#: /views/locations/admin_view.ctp:53
+#: /views/messages/view.ctp:18
+#: /views/shows/admin_view.ctp:45
+#: /views/songs/admin_view.ctp:28
+#: /views/subscribers/admin_index.ctp:17
+msgid "delete"
+msgstr "löschen"
+
+#: /views/bands/admin_view.ctp:48
+#: /views/elements/actions.ctp:10
+#: /views/events/admin_index.ctp:64
+#: /views/locations/admin_view.ctp:53
+#: /views/messages/view.ctp:18
+#: /views/shows/admin_view.ctp:45
+#: /views/songs/admin_view.ctp:28
+msgid "Are you sure?"
+msgstr "Bist du sicher?"
+
+#: /views/bands/search.ctp:3
+msgid "Bands in the database"
+msgstr "Bands in der Datenbank"
+
+#: /views/bands/search.ctp:10
+msgid "Create a new band"
+msgstr "Neue Band erstellen"
+
+#: /views/blog_posts/admin_add.ctp:1
+msgid "Add Post"
+msgstr "Neue News"
+
+#: /views/blog_posts/admin_add.ctp:4
+#: /views/blog_posts/admin_edit.ctp:4
+#: /views/blog_posts/admin_index.ctp:7
+msgid "Post"
+msgstr "Post"
+
+#: /views/blog_posts/admin_edit.ctp:1
+msgid "Edit Post"
+msgstr "Post bearbeiten"
+
+#: /views/blog_posts/admin_index.ctp:1
+#: /views/users/admin_dashboard.ctp:16;19
+msgid "News"
+msgstr "Neues"
+
+#: /views/blog_posts/admin_index.ctp:2
+msgid "Add news"
+msgstr "Post hinzufügen"
+
+#: /views/blog_posts/index.ctp:1
+msgid "Blog'n'Roll"
+msgstr "Blog'n'Roll"
+
+#: /views/comments/add.ctp:3
+#: /views/elements/comment.ctp:32
+#: /views/layouts/default.ctp:123
+msgid "Leave a comment"
+msgstr "Hinterlasse einen Kommentar"
+
+#: /views/comments/add.ctp:5
+#: /views/elements/comment.ctp:44
+msgid "Your name"
+msgstr "Dein Name"
+
+#: /views/comments/add.ctp:6
+#: /views/elements/comment.ctp:45
+#: /views/subscribers/subscribe.ctp:6
+#: /views/subscribers/unsubscribe.ctp:6
+msgid "Your E-Mail"
+msgstr "Deine E-Mail"
+
+#: /views/comments/add.ctp:7
+#: /views/elements/comment.ctp:46
+msgid "Your Comment"
+msgstr "Dein Kommentar"
+
+#: /views/comments/add.ctp:8
+#: /views/elements/comment.ctp:47
+msgid "Type the bandname of the idiots"
+msgstr "Gib den Bandnamen der Idiots ein"
+
+#: /views/comments/add.ctp:9
+#: /views/comments/admin_edit.ctp:9
+msgid "Submit comment"
+msgstr "Kommentar absenden"
+
+#: /views/comments/admin_edit.ctp:1
+msgid "Edit Comment"
+msgstr "Kommentar bearbeiten"
+
+#: /views/comments/admin_index.ctp:2
+#: /views/comments/index.ctp:1
+#: /views/elements/show.ctp:53
+#: /views/layouts/default.ctp:112
+#: /views/settings/admin_edit.ctp:14
+#: /views/users/admin_dashboard.ctp:22
+msgid "Comments"
+msgstr "Kommentare"
+
+#: /views/comments/admin_index.ctp:10
+msgid "Model"
+msgstr "Model"
+
+#: /views/comments/admin_index.ctp:11
+msgid "Approved"
+msgstr "Bestätigt"
+
+#: /views/comments/admin_index.ctp:23
+#: /views/events/admin_view.ctp:19
+#: /views/shows/admin_view.ctp:30
+msgid "yes"
+msgstr "ja"
+
+#: /views/comments/admin_index.ctp:23
+#: /views/events/admin_view.ctp:19
+#: /views/shows/admin_view.ctp:30
+msgid "no"
+msgstr "nein"
+
+#: /views/elements/actions.ctp:8
+#: /views/events/admin_index.ctp:61
+msgid "view"
+msgstr "ansehen"
+
+#: /views/elements/blogpost.ctp:6
+msgid "comments"
+msgstr "Kommentare"
+
+#: /views/elements/editdelete.ctp:15
+msgid "Created by"
+msgstr "Erstellt von"
+
+#: /views/elements/flashplayer.ctp:9
+msgid "No video playback capabilities."
+msgstr ""
+
+#: /views/elements/show.ctp:24
+msgid "Pictures available"
+msgstr "Bilder verfügbar"
+
+#: /views/elements/video_table.ctp:5
+#: /views/videos/admin_add.ctp:10
+#: /views/videos/admin_edit.ctp:14
+msgid "Poster"
+msgstr ""
+
+#: /views/elements/video_table.ctp:6
+#: /views/events/admin_index.ctp:26
+#: /views/events/admin_view.ctp:10
+#: /views/releases/admin_index.ctp:8
+#: /views/songs/admin_index.ctp:23
+#: /views/songs/admin_view.ctp:3
+msgid "Title"
+msgstr "Titel"
+
+#: /views/events/admin_add.ctp:1;6
+#: /views/events/admin_index.ctp:17
+msgid "Add event"
+msgstr "Ereignis hinzufügen"
+
+#: /views/events/admin_add.ctp:10
+#: /views/events/admin_edit.ctp:11
+#: /views/events/admin_index.ctp:25
+#: /views/messages/inbox.ctp:10
+#: /views/messages/view.ctp:7
+msgid "Date"
+msgstr "Datum"
+
+#: /views/events/admin_add.ctp:25
+#: /views/events/admin_edit.ctp:26
+#: /views/locations/admin_add.ctp:17
+#: /views/locations/admin_edit.ctp:18
+#: /views/releases/admin_add.ctp:14
+#: /views/releases/admin_edit.ctp:16
+#: /views/setlists/admin_add.ctp:9
+#: /views/setlists/admin_edit.ctp:9
+#: /views/settings/admin_edit.ctp:18
+#: /views/shows/admin_add.ctp:49
+#: /views/shows/admin_edit.ctp:61
+#: /views/songs/admin_add.ctp:12
+#: /views/songs/admin_edit.ctp:12
+#: /views/tracks/admin_add.ctp:11
+#: /views/tracks/admin_edit.ctp:12
+#: /views/tracks/admin_register.ctp:8
+#: /views/videos/admin_add.ctp:23
+#: /views/videos/admin_edit.ctp:33
+msgid "save"
+msgstr "speichern"
+
+#: /views/events/admin_edit.ctp:1;6
+msgid "Edit event"
+msgstr "Ereignis bearbeiten"
+
+#: /views/events/admin_index.ctp:6
+msgid "Events"
+msgstr "Events"
+
+#: /views/events/admin_index.ctp:24
+#: /views/events/admin_view.ctp:8
+#: /views/videos/admin_add.ctp:14
+msgid "Type"
+msgstr "Typ"
+
+#: /views/events/admin_index.ctp:27
+msgid "Status"
+msgstr "Status"
+
+#: /views/events/admin_index.ctp:28
+#: /views/subscribers/admin_index.ctp:9
+msgid "Action"
+msgstr "Aktion"
+
+#: /views/events/admin_index.ctp:63
+msgid "push"
+msgstr "erinnern"
+
+#: /views/events/admin_view.ctp:6
+msgid "Event"
+msgstr "Event"
+
+#: /views/events/admin_view.ctp:12
+msgid "Details"
+msgstr "Details"
+
+#: /views/events/admin_view.ctp:14
+msgid "Start"
+msgstr "Beginn"
+
+#: /views/events/admin_view.ctp:16
+msgid "Time"
+msgstr "Uhrzeit"
+
+#: /views/events/admin_view.ctp:18
+msgid "All Day"
+msgstr "Ganzags"
+
+#: /views/events/admin_view.ctp:20
+msgid "Participants"
+msgstr "Teilnehmer"
+
+#: /views/events/admin_view.ctp:33;41
+msgid "accept"
+msgstr "annehmen"
+
+#: /views/events/admin_view.ctp:34;38
+msgid "decline"
+msgstr "ablehnen"
+
+#: /views/helpers/time_l8n.php:12
+msgid "Today, %s"
+msgstr "Heute um %s"
+
+#: /views/helpers/time_l8n.php:15
+msgid "Yesterday, %s"
+msgstr "Gestern um %s"
+
+#: /views/helpers/time_l8n.php:18
+msgid "%%b %%eS%s, %%H:%%M"
+msgstr "%%e. %%b %s, %%H:%%M"
+
+#: /views/layouts/default.ctp:54
+msgid "home"
+msgstr "start"
+
+#: /views/layouts/default.ctp:55
+msgid "band"
+msgstr "kapelle"
+
+#: /views/layouts/default.ctp:56
+msgid "shows"
+msgstr "konzerte"
+
+#: /views/layouts/default.ctp:57
+msgid "pictures"
+msgstr "bilder"
+
+#: /views/layouts/default.ctp:58
+msgid "music"
+msgstr "musik"
+
+#: /views/layouts/default.ctp:59
+msgid "videos"
+msgstr "videos"
+
+#: /views/layouts/default.ctp:60
+msgid "contact"
+msgstr "kontakt"
+
+#: /views/layouts/default.ctp:61
+msgid "links"
+msgstr "links"
+
+#: /views/layouts/default.ctp:80
+#: /views/users/admin_dashboard.ctp:1
+msgid "Dashboard"
+msgstr "Kontrollzentrum"
+
+#: /views/layouts/default.ctp:83
+msgid "unread messages"
+msgstr "ungelesene Nachrichten"
+
+#: /views/layouts/default.ctp:86
+#: /views/users/admin_dashboard.ctp:48
+msgid "Logout"
+msgstr "Abmelden"
+
+#: /views/layouts/default.ctp:92
+#: /views/shows/index.ctp:4
+msgid "Upcoming Shows"
+msgstr "Anstehende Konzerte"
+
+#: /views/layouts/default.ctp:96;116
+msgid "more"
+msgstr "mehr"
+
+#: /views/layouts/default.ctp:103
+msgid "Stay tuned"
+msgstr "Stay tuned"
+
+#: /views/layouts/default.ctp:105
+msgid "Subscribe via RSS"
+msgstr "RSS abonnieren"
+
+#: /views/layouts/default.ctp:105;106
+msgid "Show dates &amp; News"
+msgstr "Konzerttermine &amp; News"
+
+#: /views/layouts/default.ctp:106
+#: /views/subscribers/subscribe.ctp:1
+msgid "Subscribe to Newsletter"
+msgstr "Newsletter abonnieren"
+
+#: /views/layouts/default.ctp:107
+msgid "Myspace"
+msgstr ""
+
+#: /views/layouts/default.ctp:107
+msgid "Visit the Idiots' space"
+msgstr "Besuche die Idiots auf"
+
+#: /views/layouts/default.ctp:108
+msgid "Jamendo"
+msgstr ""
+
+#: /views/layouts/default.ctp:108
+msgid "Album &amp; mp3 download"
+msgstr "Album &amp; mp3 Download"
+
+#: /views/layouts/default.ctp:122
+msgid "View all comments"
+msgstr "Alle Kommenare lesen"
+
+#: /views/links/admin_add.ctp:1
+msgid "Add Link"
+msgstr "Link hinzufügen"
+
+#: /views/links/admin_add.ctp:5
+#: /views/links/admin_edit.ctp:5
+msgid "Link"
+msgstr "Link"
+
+#: /views/links/admin_edit.ctp:1
+msgid "Edit Link"
+msgstr "Link bearbeiten"
+
+#: /views/links/admin_index.ctp:2
+#: /views/users/admin_dashboard.ctp:47
+msgid "Links"
+msgstr "Links"
+
+#: /views/links/admin_index.ctp:3
+msgid "Add link"
+msgstr "Link hinzufügen"
+
+#: /views/links/admin_index.ctp:11
+msgid "Url"
+msgstr "Url"
+
+#: /views/locations/admin_add.ctp:3
+#: /views/locations/admin_edit.ctp:3
+#: /views/locations/admin_index.ctp:3
+msgid "Add Location"
+msgstr "Location hinzufügen"
+
+#: /views/locations/admin_index.ctp:1
+#: /views/users/admin_dashboard.ctp:8
+msgid "Locations"
+msgstr "Locations"
+
+#: /views/locations/admin_index.ctp:7
+msgid "Search Location"
+msgstr "Location suchen"
+
+#: /views/locations/admin_index.ctp:20;22;54
+msgid "locations"
+msgstr "Locations"
+
+#: /views/locations/admin_index.ctp:29
+msgid "Country"
+msgstr "Land"
+
+#: /views/locations/admin_index.ctp:30
+msgid "Zip"
+msgstr "PLZ"
+
+#: /views/locations/admin_index.ctp:31
+msgid "City"
+msgstr "Stadt"
+
+#: /views/locations/admin_view.ctp:4
+msgid "Address"
+msgstr "Addresse"
+
+#: /views/locations/search.ctp:3
+msgid "Locations in the database"
+msgstr "Locations in der Datenbank"
+
+#: /views/locations/search.ctp:14
+msgid "Create a new location:"
+msgstr "Neue Location erzeugen:"
+
+#: /views/messages/compose.ctp:1
+msgid "Compose Message"
+msgstr "Nachricht verfassen"
+
+#: /views/messages/compose.ctp:11
+msgid "Recipients"
+msgstr "Empfänger"
+
+#: /views/messages/compose.ctp:21
+msgid "Send message"
+msgstr "Nachricht abschicken"
+
+#: /views/messages/inbox.ctp:4
+msgid "New message"
+msgstr "Neue Nachricht"
+
+#: /views/messages/inbox.ctp:5
+msgid "%u messages, %u unread"
+msgstr "%u Nachrichten, %u ungelesene"
+
+#: /views/messages/inbox.ctp:11
+#: /views/messages/view.ctp:3
+msgid "From"
+msgstr "Von"
+
+#: /views/messages/inbox.ctp:12
+#: /views/messages/view.ctp:9
+#: /views/subscribers/admin_compose.ctp:7
+msgid "Subject"
+msgstr "Betreff"
+
+#: /views/messages/view.ctp:5
+msgid "To"
+msgstr "An"
+
+#: /views/messages/view.ctp:16
+msgid "reply"
+msgstr "antworten"
+
+#: /views/messages/view.ctp:17
+msgid "mark unread"
+msgstr "Als ungelesen markieren"
+
+#: /views/pages/deu/contact.ctp:3
+#: /views/pages/eng/contact.ctp:3
+msgid "Booking"
+msgstr "Booking"
+
+#: /views/pages/deu/home.ctp:15
+#: /views/pages/eng/home.ctp:14
+msgid "Read all news"
+msgstr "Alle News lesen"
+
+#: /views/playlists/admin_edit.ctp:1
+msgid "Edit Playlist"
+msgstr "Playlist bearbeiten"
+
+#: /views/playlists/admin_edit.ctp:2
+#: /views/releases/view.ctp:7
+#: /views/tracklists/admin_edit.ctp:16
+msgid "Tracklist"
+msgstr "Trackliste"
+
+#: /views/playlists/admin_edit.ctp:6
+#: /views/releases/admin_edit.ctp:22
+msgid "Edit Tracklist"
+msgstr "Trackliste bearbeiten"
+
+#: /views/releases/admin_add.ctp:1
+#: /views/releases/admin_index.ctp:2
+msgid "Add Release"
+msgstr "Release hinzufügen"
+
+#: /views/releases/admin_add.ctp:4
+#: /views/releases/admin_edit.ctp:4
+msgid "Release"
+msgstr ""
+
+#: /views/releases/admin_add.ctp:11
+#: /views/releases/admin_edit.ctp:12
+#: /views/releases/admin_index.ctp:7
+msgid "Cover"
+msgstr ""
+
+#: /views/releases/admin_edit.ctp:1
+msgid "Edit Release"
+msgstr "Release bearbeiten"
+
+#: /views/releases/admin_edit.ctp:20
+#: /views/songs/admin_view.ctp:13
+#: /views/tracklists/admin_edit.ctp:22;45
+#: /views/tracks/admin_index.ctp:1
+#: /views/users/admin_dashboard.ctp:32
+msgid "Tracks"
+msgstr "Tracks"
+
+#: /views/releases/admin_index.ctp:1
+#: /views/releases/index.ctp:17
+#: /views/users/admin_dashboard.ctp:30
+msgid "Releases"
+msgstr ""
+
+#: /views/releases/admin_index.ctp:9
+#: /views/tracks/admin_index.ctp:16
+msgid "Year"
+msgstr "Jahr"
+
+#: /views/releases/index.ctp:1
+#: /views/tracks/index.ctp:1
+msgid "Music"
+msgstr "Musik"
+
+#: /views/releases/index.ctp:3
+msgid "Jukebox"
+msgstr ""
+
+#: /views/releases/index.ctp:32
+#: /views/tracks/index.ctp:21
+msgid "Visit The Asstereoidiots at"
+msgstr "Besuche die Idiots auf"
+
+#: /views/releases/index.ctp:32
+#: /views/tracks/index.ctp:21
+msgid "for more music and album download"
+msgstr "für mehr Musik und Alben zum herunterladen"
+
+#: /views/setlists/admin_add.ctp:5
+msgid "Add setlist"
+msgstr "Setliste hinzufügen"
+
+#: /views/setlists/admin_edit.ctp:5
+msgid "Edit Setlist"
+msgstr "Setliste bearbeiten"
+
+#: /views/setlists/admin_edit.ctp:13
+msgid "Songlist"
+msgstr "Songlist"
+
+#: /views/setlists/admin_edit.ctp:16
+msgid "Edit Songlist"
+msgstr "Songlist bearbeiten"
+
+#: /views/setlists/admin_index.ctp:2
+#: /views/users/admin_dashboard.ctp:10
+msgid "Setlists"
+msgstr "Setlisten"
+
+#: /views/setlists/admin_index.ctp:3
+msgid "Add Setlist"
+msgstr "Setliste hinzufügen"
+
+#: /views/setlists/admin_index.ctp:21
+msgid "Print setlist"
+msgstr "Setliste drucken"
+
+#: /views/settings/admin_edit.ctp:2
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: /views/settings/admin_edit.ctp:8
+msgid "Show ratings"
+msgstr "Bewertungen anzeigen"
+
+#: /views/shows/admin_add.ctp:1
+#: /views/shows/admin_index.ctp:2
+msgid "Add Show"
+msgstr "Konzert hinzufügen"
+
+#: /views/shows/admin_add.ctp:3
+#: /views/shows/admin_edit.ctp:3
+#: /views/shows/admin_index.ctp:10
+#: /views/shows/admin_view.ctp:12
+#: /views/shows/detail.ctp:17
+#: /views/shows/view.ctp:17
+msgid "Showtime"
+msgstr "Showtime"
+
+#: /views/shows/admin_add.ctp:5
+#: /views/shows/admin_edit.ctp:5
+msgid "Select date"
+msgstr "Datum wählen"
+
+#: /views/shows/admin_add.ctp:9
+#: /views/shows/admin_edit.ctp:10
+#: /views/shows/admin_index.ctp:11
+#: /views/shows/admin_view.ctp:14
+#: /views/shows/detail.ctp:19
+#: /views/shows/view.ctp:19
+msgid "Location"
+msgstr "Location"
+
+#: /views/shows/admin_add.ctp:12
+#: /views/shows/admin_edit.ctp:13
+msgid "Search or create location"
+msgstr "Suche oder erstelle Location"
+
+#: /views/shows/admin_add.ctp:16
+#: /views/shows/admin_edit.ctp:17
+msgid "Other Bands"
+msgstr "Andere Bands"
+
+#: /views/shows/admin_add.ctp:25
+#: /views/shows/admin_edit.ctp:36
+msgid "Search or create band"
+msgstr "Suche oder erstelle Band"
+
+#: /views/shows/admin_add.ctp:40
+#: /views/shows/admin_edit.ctp:50
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: /views/shows/admin_add.ctp:41
+#: /views/shows/admin_edit.ctp:51
+msgid "Send newsletter"
+msgstr "Newsletter verschicken"
+
+#: /views/shows/admin_add.ctp:45
+#: /views/shows/admin_edit.ctp:55
+msgid "Date and Location will be inserted automatically"
+msgstr "Datum und Location werden automatisch eingefügt"
+
+#: /views/shows/admin_edit.ctp:1
+msgid "Edit Show"
+msgstr "Konzert bearbeiten"
+
+#: /views/shows/admin_stats.ctp:1
+msgid "Show Statistics"
+msgstr "Statstik anzeigen"
+
+#: /views/shows/admin_stats.ctp:11
+msgid "shows total"
+msgstr "Konzerte insgesamt"
+
+#: /views/shows/admin_view.ctp:18
+#: /views/shows/detail.ctp:41
+#: /views/shows/view.ctp:41
+#: /views/songs/admin_index.ctp:25
+#: /views/songs/admin_view.ctp:11
+msgid "Rating"
+msgstr "Bewertung"
+
+#: /views/shows/admin_view.ctp:29
+msgid "Setlist public"
+msgstr "Setlist öffentlich"
+
+#: /views/shows/detail.ctp:31
+#: /views/shows/view.ctp:31
+msgid "Rocking with"
+msgstr "mit"
+
+#: /views/shows/index.ctp:1
+msgid "Live'n'Loud!"
+msgstr "Live und Laut!"
+
+#: /views/shows/index.ctp:14
+msgid "Accomplished Shows"
+msgstr "Absolvierte Konzerte"
+
+#: /views/songlists/admin_edit.ctp:3
+msgid "Edit Setlist:"
+msgstr "Setliste bearbeiten"
+
+#: /views/songlists/admin_edit.ctp:10
+msgid "Generate Setlist"
+msgstr "Generiere Setlist"
+
+#: /views/songlists/admin_edit.ctp:11
+#: /views/songs/admin_index.ctp:4
+msgid "Add song"
+msgstr "Song hinzufügen"
+
+#: /views/songlists/admin_edit.ctp:12
+#: /views/tracklists/admin_edit.ctp:9
+msgid "Clear"
+msgstr ""
+
+#: /views/songlists/admin_edit.ctp:13
+#: /views/tracklists/admin_edit.ctp:10
+msgid "Save"
+msgstr "Speichern"
+
+#: /views/songlists/admin_edit.ctp:16
+msgid "Minimum rating"
+msgstr ""
+
+#: /views/songlists/admin_edit.ctp:28;48
+#: /views/tracklists/admin_edit.ctp:43
+msgid "Minutes in"
+msgstr "Minuten in"
+
+#: /views/songlists/admin_edit.ctp:30;50
+#: /views/songs/admin_index.ctp:1;17
+#: /views/users/admin_dashboard.ctp:31
+msgid "Songs"
+msgstr ""
+
+#: /views/songlists/admin_edit.ctp:44
+msgid "Selection"
+msgstr "Auswahl"
+
+#: /views/songs/admin_add.ctp:1
+msgid "Add Song"
+msgstr "Song hinzufügen"
+
+#: /views/songs/admin_add.ctp:5
+#: /views/songs/admin_edit.ctp:5
+#: /views/tracks/admin_index.ctp:15
+msgid "Song"
+msgstr ""
+
+#: /views/songs/admin_edit.ctp:1
+msgid "Edit Song"
+msgstr "Song bearbeiten"
+
+#: /views/songs/admin_index.ctp:7
+msgid "Search song"
+msgstr "Song suchen"
+
+#: /views/songs/admin_index.ctp:24
+#: /views/songs/admin_view.ctp:5
+msgid "Artist"
+msgstr ""
+
+#: /views/songs/admin_view.ctp:9
+msgid "Lyrics"
+msgstr ""
+
+#: /views/songs/admin_view.ctp:29
+#: /views/tracklists/admin_edit.ctp:68
+#: /views/tracks/admin_add.ctp:1
+#: /views/tracks/admin_index.ctp:4
+msgid "Add track"
+msgstr "Track hinzufügen"
+
+#: /views/subscribers/admin_compose.ctp:4
+msgid "Write a Newsletter"
+msgstr "Newsletter verfassen"
+
+#: /views/subscribers/admin_compose.ctp:5
+msgid "Compose"
+msgstr "Verfassen"
+
+#: /views/subscribers/admin_compose.ctp:8
+msgid "Message"
+msgstr "Nachricht"
+
+#: /views/subscribers/admin_compose.ctp:9
+#: /views/users/admin_dashboard.ctp:20
+msgid "Send Newsletter"
+msgstr "Newsletter verschicken"
+
+#: /views/subscribers/admin_index.ctp:1
+msgid "Newsletter Subscribers"
+msgstr "Newsletter Abonnenten"
+
+#: /views/subscribers/admin_index.ctp:7
+msgid "E-mail"
+msgstr ""
+
+#: /views/subscribers/admin_index.ctp:8
+msgid "Subscribed"
+msgstr "Abonniert"
+
+#: /views/subscribers/admin_send_newsletter.ctp:2
+msgid "Newsletter has been sent:"
+msgstr "Newsletter wurde verschickt:"
+
+#: /views/subscribers/subscribe.ctp:2
+msgid "Never miss a show of the Idiots, get latest news and stay in touch with the most unprofessional band in the world..."
+msgstr ""
+
+#: /views/subscribers/subscribe.ctp:5
+msgid "Subscribe NOW!"
+msgstr "JETZT abonnieren!"
+
+#: /views/subscribers/subscribe.ctp:7
+msgid "subscribe now!"
+msgstr "Jetzt abonnieren"
+
+#: /views/subscribers/subscribe.ctp:11
+msgid "We won't abuse your email address and never will give it to any third party person or organisation. The only purpose is to send you a newsletter via e-mail on a regular basis. You won't get more than one e-mail per month."
+msgstr ""
+
+#: /views/subscribers/subscribe.ctp:12
+msgid "If you have subscribed already and want to unsubscribe click"
+msgstr ""
+
+#: /views/subscribers/unsubscribe.ctp:1
+msgid "Unsubscribe from Newsletter"
+msgstr "Vom Newsletter abmelden"
+
+#: /views/subscribers/unsubscribe.ctp:2
+msgid "You really won't be our friend no more if you do this! But ok, if you're totally sure that you don't want to get no more newsletters.... go ahead.... enter your email address and click on 'unnsubscribe'. Do it. C'mon! But don't ever come again and wanna make friends with us. Nope. Over and Out. Bye bye.... we WON'T miss you."
+msgstr ""
+
+#: /views/subscribers/unsubscribe.ctp:5
+msgid "Unsubscribe"
+msgstr "Abmelden"
+
+#: /views/subscribers/unsubscribe.ctp:7
+msgid "unsubscribe"
+msgstr "abmelden"
+
+#: /views/tracklists/admin_edit.ctp:3
+msgid "Edit:"
+msgstr "Bearbeiten:"
+
+#: /views/tracklists/admin_edit.ctp:20
+msgid " in"
+msgstr "in"
+
+#: /views/tracklists/admin_edit.ctp:39
+msgid "Available"
+msgstr ""
+
+#: /views/tracks/admin_add.ctp:4
+msgid "Upload track"
+msgstr "Track hochladen"
+
+#: /views/tracks/admin_add.ctp:7
+#: /views/tracks/admin_edit.ctp:7
+msgid "File"
+msgstr "Datei"
+
+#: /views/tracks/admin_edit.ctp:1
+msgid "Edit Track"
+msgstr "Track bearbeiten"
+
+#: /views/tracks/admin_edit.ctp:4
+msgid "Track"
+msgstr "Track"
+
+#: /views/tracks/admin_index.ctp:14
+msgid "Filename"
+msgstr "Dateiname"
+
+#: /views/tracks/admin_index.ctp:17
+msgid "Length"
+msgstr "Länge"
+
+#: /views/tracks/admin_register.ctp:1
+msgid "Register Media File"
+msgstr "Meidendatei registrieren"
+
+#: /views/users/admin_dashboard.ctp:11
+msgid "Statistics"
+msgstr "Statistik"
+
+#: /views/users/admin_dashboard.ctp:21
+msgid "Newsletter subscribers"
+msgstr "Newsletter Abonnenten"
+
+#: /views/users/admin_dashboard.ctp:27
+msgid "Media"
+msgstr "Medien"
+
+#: /views/users/admin_dashboard.ctp:34
+#: /views/videos/admin_index.ctp:2
+#: /views/videos/index.ctp:1
+msgid "Videos"
+msgstr "Videos"
+
+#: /views/users/admin_dashboard.ctp:35
+msgid "Albums"
+msgstr "Foto-Alben"
+
+#: /views/users/admin_dashboard.ctp:40
+msgid "Misc"
+msgstr "Verschiedenes"
+
+#: /views/users/admin_dashboard.ctp:43
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: /views/users/admin_dashboard.ctp:44
+msgid "Calendar"
+msgstr "Kalender"
+
+#: /views/users/admin_dashboard.ctp:45
+msgid "User Settings"
+msgstr "Benutzer-Einstellungen"
+
+#: /views/users/admin_dashboard.ctp:46
+msgid "Website Settings"
+msgstr "Website-Einstellungen"
+
+#: /views/users/admin_settings.ctp:5
+msgid "General settings"
+msgstr "Allgemeine Enstellungen"
+
+#: /views/users/admin_settings.ctp:11
+msgid "Send Email notifications"
+msgstr "E-Mail Benachrichtigung versenden"
+
+#: /views/users/admin_settings.ctp:12
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: /views/users/admin_settings.ctp:20;25
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: /views/users/admin_settings.ctp:23
+msgid "New password"
+msgstr "Neues Passwort"
+
+#: /views/users/admin_settings.ctp:24
+msgid "Repeat new password"
+msgstr "Neues Passwort wiederholen"
+
+#: /views/users/login.ctp:5
+msgid "Login"
+msgstr "Anmelden"
+
+#: /views/users/login.ctp:7
+msgid "Username"
+msgstr "Benutzername"
+
+#: /views/users/login.ctp:8
+msgid "Password"
+msgstr "Passwort"
+
+#: /views/users/login.ctp:9
+msgid "Remember me?"
+msgstr "Eingeloggt bleiben?"
+
+#: /views/users/login.ctp:10
+msgid "login"
+msgstr "Anmelden"
+
+#: /views/videos/admin_add.ctp:1
+#: /views/videos/admin_index.ctp:3
+msgid "Add Video"
+msgstr "Video hinzufügen"
+
+#: /views/videos/admin_add.ctp:5
+msgid "Video"
+msgstr "Video"
+
+#: /views/videos/admin_add.ctp:11
+msgid "Poster image"
+msgstr "Posterbild"
+
+#: /views/videos/admin_add.ctp:17
+msgid "Embedd Youtube HTML"
+msgstr "Youtube HTML einbetten"
+
+#: /views/videos/admin_add.ctp:19
+msgid "Upload a file"
+msgstr "Datei hochladen"
+
+#: /views/videos/admin_add.ctp:20
+msgid "Max upload filesize is:"
+msgstr "Max. Upload Dateigröße ist:"
+
+#: /views/videos/admin_add.ctp:22
+msgid "Register an FTP-uploaded file"
+msgstr "Datei registrieren"
+
+#: /views/videos/admin_edit.ctp:1
+msgid "Edit Video"
+msgstr "Video bearbeiten"
+
+#: /views/videos/admin_edit.ctp:5
+msgid "Info"
+msgstr ""
+
+#: /views/videos/admin_edit.ctp:15
+msgid "Poster picture"
+msgstr "Posterbild"
+
+#: /views/videos/admin_edit.ctp:22
+msgid "Video source"
+msgstr "Videoquelle"
+
+#: /views/videos/index.ctp:3
+msgid "Some video stuff... Enjoy!"
+msgstr "Ein paar Videos... Viel Spaß damit!"
+
+#~ msgid "Editor"
+#~ msgstr "Editor"
+#~ msgid "Drag and drop songs from the pool to the tracklist and vice versa."
+#~ msgstr "Ziehe songs vom Pool zur Trackliste und umgekehrt"
+#~ msgid ""
+#~ "Enter a number of songs and click 'Generate Tracklist' to generate a "
+#~ "random tracklist."
+#~ msgstr ""
+#~ "Gib eine Anzahl an Sons ein und klicke auf 'Trackliste generieren' um "
+#~ "eine zufällige Trackliste zu generieren."
+#~ msgid "Save tracklist"
+#~ msgstr "Trackliste speichern"
+#~ msgid "Clear Tracklist"
+#~ msgstr "Trackliste löschen"
+#~ msgid ""
+#~ "This page has not been translated yet. You are viewing the original page "
+#~ "instead."
+#~ msgstr ""
+#~ "Diese Seite wurde noch nicht übersetzt. Sie sehen die Seite stattdessen "
+#~ "in der Originalsprache"
+#~ msgid "An event has been created and connected to this show"
+#~ msgstr "Ein Event für dieses Konzert wurde erzeugt"
+#~ msgid "Failed to connect event"
+#~ msgstr "Fehler beim verknüpfen des Events"
+#~ msgid "Failed to create event"
+#~ msgstr "Fehler beim Erstellen des Events"
+#~ msgid "Invalid event type"
+#~ msgstr "Ungültiger Eventtyp"
+#~ msgid "The event type has been saved"
+#~ msgstr "Eventtyp wurde gespeichert"
+#~ msgid "The event type could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Eventtyp konnte nicht gespeichert werden. Bitte versuche es erneut.."
+#~ msgid "Invalid id for event type"
+#~ msgstr "Ungültige Id für Eventtyp"
+#~ msgid "Event type deleted"
+#~ msgstr "Eventtyp wurde gelöscht"
+#~ msgid "Event type was not deleted"
+#~ msgstr "Eventtyp wurde nicht gelöscht"
+#~ msgid "Invalid event"
+#~ msgstr "Ungülttiger Event"
+#~ msgid "The event could not be saved. Please, try again."
+#~ msgstr "Event konnte nicht gespeichert werden. Bitte noch mal versuchen"
+#~ msgid "Invalid id for event"
+#~ msgstr "Ungültige Id für Event"
+#~ msgid "Event deleted"
+#~ msgstr "Event wurde gelöscht"
+#~ msgid "Add Event Type"
+#~ msgstr "Eventtyp hinzufügen"
+#~ msgid "Submit"
+#~ msgstr "Absenden"
+#~ msgid "Manage Event Types"
+#~ msgstr "Eventtypen verwalten"
+#~ msgid "View Calendar"
+#~ msgstr "Kalender anzeigen"
+#~ msgid "Edit Event Type"
+#~ msgstr "Eventtyp bearbeiten"
+#~ msgid "View Event Type"
+#~ msgstr "Eventtyp anzeigen"
+#~ msgid "Event Types"
+#~ msgstr "Eventtypen"
+#~ msgid "View"
+#~ msgstr "Ansehen"
+#~ msgid ""
+#~ "Page %page% of %pages%, showing %current% records out of %count% total, "
+#~ "starting on record %start%, ending on %end%"
+#~ msgstr ""
+#~ "Seite %page% von %pages%, zeige %current% Einträge von %count%, von %start"
+#~ "% bis %end%"
+#~ msgid "New Event Type"
+#~ msgstr "Neuer Eventtyp"
+#~ msgid "Manage Events"
+#~ msgstr "Events verwalten"
+#~ msgid "Event Type"
+#~ msgstr "Eventtyp"
+#~ msgid "Color"
+#~ msgstr "Farbe"
+#~ msgid "Delete Event Type"
+#~ msgstr "Eventtyp löschen"
+#~ msgid "Are you sure you want to delete %s?"
+#~ msgstr "Bist du sicher, dass %s gelöscht werden soll?"
+#~ msgid "Related Events"
+#~ msgstr "Verwandte Events"
+#~ msgid "End"
+#~ msgstr "Ende"
+#~ msgid "View Event"
+#~ msgstr "Event anzeigen"
+#~ msgid "New Event"
+#~ msgstr "Neuer Event"
+#~ msgid "Delete Event"
+#~ msgstr "Event löschen"
+#~ msgid "Are you sure you want to delete this %s event?"
+#~ msgstr "Bist du sicher, dass du den %s Event löschen willst?"
+#~ msgid "Manage Events Types"
+#~ msgstr "Eventtypen verwalten"
+#~ msgid "New Band"
+#~ msgstr "Neue Band"
+#~ msgid "Your comment"
+#~ msgstr "Dein Kommentar"
+#~ msgid "Idiots on Myspace"
+#~ msgstr "Idiots bei Myspace"
+#~ msgid ""
+#~ "To filter the list of locations do a search by name or city (or both)"
+#~ msgstr ""
+#~ "Um die Liste der Locations zu filtern, suche nach Name oder Stadt (oder "
+#~ "beides)"
+#~ msgid "sort by name"
+#~ msgstr "Nach Name sortieren"
+#~ msgid "sort by city"
+#~ msgstr "Nach Stadt sortieren"
+#~ msgid "Welcome on Planet Rock'n'Roll"
+#~ msgstr "Willkommen auf Planet Rock'n'Roll"
+#~ msgid "Homepage"
+#~ msgstr "Homepage"
+#~ msgid "Leave a Comment for this Show"
+#~ msgstr "Hinterlasse einen Kommentar zu diesem Konzert"
+#~ msgid "Type the Bandname of the Idiots"
+#~ msgstr "Gib den Bandnamen der Idiots ein"
+#~ msgid "subscribers"
+#~ msgstr "Abonnenten"
+#~ msgid "upload"
+#~ msgstr "hochladen"
+#~ msgid "Edit Media File"
+#~ msgstr "Mediendatei bearbeiten"
+#~ msgid "Sort tracks by drag'n'drop"
+#~ msgstr "Sortiere die Tracks durch Drag'N'Drop"
+#~ msgid "New Show"
+#~ msgstr "Neues Konzert"
+#~ msgid "List Bands"
+#~ msgstr "Bands anzeigen"
+#~ msgid "List Locations"
+#~ msgstr "Locations anzeigen"
+#~ msgid "New News"
+#~ msgstr "Neue News"
+#~ msgid "List News"
+#~ msgstr "News anzeigen"
+#~ msgid "List Newsletter subscribers"
+#~ msgstr "Newsletter Abonnenten anzeigen"
+

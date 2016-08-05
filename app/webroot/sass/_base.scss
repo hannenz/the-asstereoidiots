@@ -1,0 +1,81 @@
+*, *::before, *::after {
+	box-sizing:inherit;
+}
+
+body {
+	box-sizing:inherit;
+	font-size:100%;
+	line-height:1.4;
+}
+
+img {
+	max-width:100%!important;
+	height:auto!important;
+}
+
+ul, li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#content-wrap {
+	padding:1rem;
+	max-width:1024px;
+	margin:0 auto;
+}
+
+#bandfoto img {
+	display:block;
+	margin:0 auto;
+	// width:100%;
+	max-width:600px;
+}
+
+#header {
+
+	background-color:#000;
+	@include background-image(linear-gradient(#2a2a2a, #101010));
+
+	#Login {
+		display:none;
+	}
+
+	img {
+		width:100%;
+		display:none;
+	}
+	h1 {
+
+		max-width:1024px;
+
+		margin:0 auto;
+
+		a {
+			display:block;
+			text-indent:100%;
+			overflow:hidden;
+			white-space:nowrap;
+			background-image:url('/img/logo.svg');
+			background-size:cover;
+			background-repeat:no-repeat;
+			height:100px;
+			background-size:70% auto;
+			background-position:50% 50%;
+
+			@include media($small-bp) {
+				height:140px;
+			}
+
+			@include media($medium-bp) {
+				height:180px;
+			}
+			@include media($large-bp) {
+				height:220px;
+			}
+			@include media($huge-bp) {
+				height:260px;
+			}
+		}
+	}
+}
