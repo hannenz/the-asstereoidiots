@@ -1,8 +1,9 @@
 <?php
 class DownloadCodesController extends AppController {
 
-	var $name = 'DownloadCodes';
-	var $helpers = array ('Html', 'Form');
+	public $name = 'DownloadCodes';
+	public $helpers = array ('Html', 'Form');
+	public $theme = 'Idiotic';
 
 	public function beforeFilter () {
 		parent::beforeFilter ();
