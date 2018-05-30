@@ -8,10 +8,10 @@ $(function() {
 
 	// Resolve address to geocoordinates
 	// We still need Google here, do we..??
-	$.getJSON ('http://maps.googleapis.com/maps/api/geocode/json?address=' + $locationField.val(), function (response) {
+	$.getJSON ('https://maps.googleapis.com/maps/api/geocode/json?address=' + $locationField.val(), function (response) {
 
 		if (response.status == 'OK') {
-			console.log (response['results'][0].geometry.location);
+			// console.log (response['results'][0].geometry.location);
 
 			var lat = response['results'][0].geometry.location.lat;
 			var lon = response['results'][0].geometry.location.lng;
@@ -33,14 +33,14 @@ $(function() {
 		$locationField.replaceWith ($map);
 
 
-		console.log(lat, lon);
+		// console.log(lat, lon);
 		var map = L.map('map').setView([lat, lon], 10);
 		
-		L.tileLayer('http://{s}.tiles.mapbox.com/v3/hannenz.iodb36pi/{z}/{x}/{y}.png', {
+		L.tileLayer('https://{s}.tiles.mapbox.com/v3/hannenz.iodb36pi/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
 
-		console.log(precision);
+		// console.log(precision);
 		if (precision == 'ROOFTOP') {
 
 			var marker = L.icon({

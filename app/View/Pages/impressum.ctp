@@ -5,9 +5,8 @@
 	<dt>Seitenbetreiber</dt>
 	<dd>
 		Johannes Braun<br>
-		Berthold-Hupmann-Stra&szlig;e 50<br>
-		88400 Biberach (Ri&szlig;)<br>
-		0 7351 42 14 46 0<br>
+		Gartenstraße 13<br>
+		89614 Öpfingen<br>
 		me@hannenz.de
 	</dd>
 	<dt>Gestaltung</dt>

@@ -25,8 +25,6 @@
 					<strong style="text-transform:uppercase"><?php echo $track['Song']['title']; ?></strong><br>
 					<?php if (!empty($track['Audiofile'][0]['name'])): ?>
 						<audio src="/files/Audiofiles/<?php echo $track['Audiofile'][0]['filename']; ?>" controls></audio>
-						<br>
-						Download: <?php echo $this->Html->link($track['Audiofile'][0]['name'], '/files/Audiofiles/' . $track['Audiofile'][0]['filename']); ?>
 					<?php else: ?>
 						<?php echo __('No Audiofile'); ?>
 					<?php endif ?>

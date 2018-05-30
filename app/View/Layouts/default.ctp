@@ -6,7 +6,7 @@
 			<?php echo $title_for_layout; ?>
 		</title>
 		<meta name="viewport" content="width=device-with,initial-scale=1,user-scalable=no" />
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<?php
 			echo $this->Html->meta('icon');
 			echo $this->Html->meta('keywords', 'asstereoidiots,band,rock\'n\'roll,assrock,punkrock');
@@ -29,6 +29,7 @@
 				'main'
 			));
 		?>
+		<link rel="stylesheet" media="only screen and (max-width: 800px)" href="/css/mobile.css" />
 		<?php
 			echo $this->Html->script(array(
 				'jquery.min',
@@ -118,6 +119,16 @@ $(document).ready(function(){
 	</head>
 	<body class="<?php echo $current; ?>">
 
+		<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.11&appId=502390706445153';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<div id="container">
 			<div id="header-wrapper">
 				<?php if ($this->Session->check('Auth.User')):?>
@@ -130,27 +141,23 @@ $(document).ready(function(){
 				<?php endif ?>
 				<div id="header">
 					<?php $userId = $this->Session->read('Auth.User.id'); if (empty($userId)) echo $this->Html->link('login', '/login', array('id' => 'Login')); ?>
-					<h1><a href="/">The Asstereoidiots</a></h1>
-
-					<div class="language-select">
-						<?php
-						if ($current_language == "deu") {
-							echo $this->Html->link('english', '/lang/eng');
-						}
-						else {
-							echo $this->Html->link('deutsch', '/lang/deu');
-						}
-						?>
-					</div>
+					<?php echo $this->Html->image('header.jpg'); ?>
+					<h1>The Asstereoidiots</h1>
+					<ul>
+						<li><?php echo $this->Html->link('deutsch', '/lang/deu', array('class' => $current_language == 'deu' ? 'selected-language' : '')); ?></li>
+						<li><?php echo $this->Html->link('english', '/lang/eng', array('class' => $current_language == 'eng' ? 'selected-language' : '')); ?></li>
+					</ul>
 				</div>
 				<div id="nav">
 					<ul>
+						<?php echo $this->Html->tag('li', $this->Html->link(__('home'), '/', array('id' => 'home'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('band'), '/band', array('id' => 'band'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('shows'), '/shows', array('id' => 'shows'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('pictures'), '/albums', array('id' => 'fotos'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('music'), '/music', array('id' => 'music'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('videos'), '/videos', array('id' => 'video'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('contact'), '/contact', array('id' => 'contact'))); ?>
+						<?php echo $this->Html->tag('li', $this->Html->link(__('links'), '/links', array('id' => 'links'))); ?>
 					</ul>
 				</div>
 			</div>
@@ -194,6 +201,10 @@ $(document).ready(function(){
 						</ul>
 					</div>
 					<div class="sideblock">
+					
+						<!-- <div class="fb&#45;page" data&#45;href="https://www.facebook.com/theasstereoidiots/" data&#45;tabs="timeline" data&#45;width="238" data&#45;height="800" data&#45;small&#45;header="false" data&#45;adapt&#45;container&#45;width="true" data&#45;hide&#45;cover="false" data&#45;show&#45;facepile="true"><blockquote cite="https://www.facebook.com/theasstereoidiots/" class="fb&#45;xfbml&#45;parse&#45;ignore"><a href="https://www.facebook.com/theasstereoidiots/">THE ASSTEREOIDIOTS</a></blockquote></div> -->
+					
+						<!--
 						<h2><?php echo __('Comments'); ?></h2>
 						<ul class="comments">
 							<?php foreach ($latest_comments as $comment):?>
@@ -207,6 +218,7 @@ $(document).ready(function(){
 							<?php echo $this->Html->tag('li', $this->Html->link(__('View all comments'), '/comments/index'), array('class' => 'view-comments')); ?>
 							<?php echo $this->Html->tag('li', $this->Html->link(__('Leave a comment'), '/comments/add'), array('class' => 'add-comment')); ?>
 						</ul>
+						-->
 					</div>
 				</div>
 			</div>

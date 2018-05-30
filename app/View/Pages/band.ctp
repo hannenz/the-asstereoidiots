@@ -1,5 +1,4 @@
 <!--h1>The Asstereoidiots</h1-->
-
 <?php #echo $this->Html->image('band.jpg', array('id' => 'theband')); ?>
 
 <h1>The Asstereoidiots</h1>
@@ -23,17 +22,17 @@
 			<p class="news-meta">"SG ass can be...!"</p>
 		</div>
 	</li>
-	<li id="band-senordon">
+	<li id="band-senordon" style="background-image:url('/img/earlobrain.jpg')">
 		<?php #echo $this->Html->tag('div', $this->Html->image('faces/senordon.jpg'), array('class' => 'list-item-image')); ?>
 		<div class="list-item-content">
-			<h2>Senor Don &middot; Bass</h2>
-			<p class="news-body">Der halbspanische BASStard. Nachdem er dem Kastagnettengeklapper entsagte, h&ouml;rte er zum ersten mal aus Kuba importierten Rock'n'Roll. Der gedankliche Kurschluss:</p>
-			<p class="news-meta">4/4 = cool, Bass = 4 Saiten</p>
+			<h2>Earl O'Brain &middot; Bass</h2>
+			<p class="news-body">Ein ausgenommenes Genie mit Mut zur Lücke. Er hat die Weisheit mit Gabeln gefressen.</p>
+			<p class="news-meta">Basst.</p>
 		</div>
 	</li>
 	<li id="band-general">
 		<?php #echo $this->Html->tag('div', $this->Html->image('faces/general.jpg'), array('class' => 'list-item-image')); ?>
-		<div class="list-item-content">
+		<div class="list-item-content" style="top:0;bottom:auto">
 			<h2>General Joxe &middot; Schlagzeug</h2>
 			<p class="news-body">Der Mann, der Mythos - DIE MASCHINE. Wenn der hauptamtliche Fellvergewaltiger loslegt, kann das nur eins bedeuten:</p>
 			<p class="news-meta">Scream for the General!</em> und zwar as loud as U can, kapiert!</p>
@@ -44,8 +43,8 @@
 
 <div style="clear:both"></div>
 
-<h2>Presseinfo</h2>
-<p><?php echo $this->Html->link('Presseinfo', DS . 'files' . DS . 'Presseinfo_The_Asstereoidiots.zip'); ?> zum herunterladen, beinhaltet Infotext, Fotos, Logo usw.</p>
+<h2>Infomaterial (Presse &amp; Technik)</h2>
+<p><?php echo $this->Html->link('Infopaket', DS . 'files' . DS . 'Presseinfo_The_Asstereoidiots.zip'); ?> zum herunterladen, beinhaltet Pressetext, Fotos, Logo und technical Rider (ZIP-Archiv, ca. 11 MB). </p> 
 
 
 

@@ -1,15 +1,15 @@
 <?php
-
-Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+Router::connect('/', 			array('controller' => 'pages', 'action' => 'display', 'home'));
 Router::connect('/pages/*',		array('controller' => 'pages', 'action' => 'display'));
 Router::connect('/band',		array('controller' => 'pages', 'action' => 'display', 'band'));
 Router::connect('/shows',		array('controller' => 'shows', 'action' => 'index'));
 Router::connect('/contact',		array('controller' => 'pages', 'action' => 'display', 'contact'));
 Router::connect('/links',		array('controller' => 'links', 'action' => 'index'));
 Router::connect('/login',		array('controller' => 'users', 'action' => 'login'));
-Router::connect('/impressum',	array('controller' => 'pages', 'action' => 'display', 'impressum'));
+Router::connect('/impressum',		array('controller' => 'pages', 'action' => 'display', 'impressum'));
 Router::connect('/music',		array('controller' => 'releases', 'action' => 'index'));
 Router::connect('/videos',		array('controller' => 'videos', 'action' => 'index'));
+Router::connect('/dirty-rock',		array('controller' => 'download_codes', 'action' => 'index'));
 
 //route to switch locale
 Router::connect('/lang/*', array('controller' => 'p28n', 'action' => 'change'));

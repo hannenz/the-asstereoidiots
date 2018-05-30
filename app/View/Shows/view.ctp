@@ -6,9 +6,11 @@ $this->Html->script('fancybox/source/jquery.fancybox.pack', array('inline' => fa
 $this->Html->css('/js/fancybox/source/jquery.fancybox', null, array('inline' => false));
 
 /* LeafletJs assets (map generation) */
-$this->Html->css('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css', null, array('inline' => false));
+// $this->Html->css('https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css', null, array('inline' => false));
+$this->Html->css('https://unpkg.com/leaflet@0.7.3/dist/leaflet.css', null, array('inline' => false));
 $this->Html->script(array(
-		'http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js',
+		// 'https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js',
+		'https://unpkg.com/leaflet@0.7.3/dist/leaflet.js',
 		'show_view.js'
 	),
 	 array('inline' => false)

@@ -29,6 +29,7 @@
 				'main'
 			));
 		?>
+		<link rel="stylesheet" media="(max-width: 800px)" href="/css/mobile.css" />
 		<?php
 			echo $this->Html->script(array(
 				'jquery.min',
@@ -118,28 +119,47 @@ $(document).ready(function(){
 	</head>
 	<body class="<?php echo $current; ?>">
 
-		<div class="container">
-			<header class="main-header">
-				<h1><a href="/">The Asstereoidiots</a></h1>
-				<nav class="main-nav">
+		<div id="container">
+			<div id="header-wrapper">
+				<?php if ($this->Session->check('Auth.User')):?>
+					<div id="dashboard">
+						<?php
+							echo $this->Html->div('dashboard', $this->element('dashboard'));
+							echo $this->Html->link(__('Dashboard'), '#', array('id' => 'dashboard-trigger'));
+						?>
+					</div>
+				<?php endif ?>
+				<div id="header">
+					<?php $userId = $this->Session->read('Auth.User.id'); if (empty($userId)) echo $this->Html->link('login', '/login', array('id' => 'Login')); ?>
+					<?php echo $this->Html->image('header.jpg'); ?>
+					<h1>The Asstereoidiots</h1>
 					<ul>
+						<li><?php echo $this->Html->link('deutsch', '/lang/deu', array('class' => $current_language == 'deu' ? 'selected-language' : '')); ?></li>
+						<li><?php echo $this->Html->link('english', '/lang/eng', array('class' => $current_language == 'eng' ? 'selected-language' : '')); ?></li>
+					</ul>
+				</div>
+				<div id="nav">
+					<ul>
+						<?php echo $this->Html->tag('li', $this->Html->link(__('home'), '/', array('id' => 'home'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('band'), '/band', array('id' => 'band'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('shows'), '/shows', array('id' => 'shows'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('pictures'), '/albums', array('id' => 'fotos'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('music'), '/music', array('id' => 'music'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('videos'), '/videos', array('id' => 'video'))); ?>
 						<?php echo $this->Html->tag('li', $this->Html->link(__('contact'), '/contact', array('id' => 'contact'))); ?>
+						<?php echo $this->Html->tag('li', $this->Html->link(__('links'), '/links', array('id' => 'links'))); ?>
 					</ul>
-				</nav>
-			</header>
+				</div>
+			</div>
 
 			<div id="flash"><?php echo $this->Session->flash();?></div>
 
-			<div class="mood"></div>
+			<div id="content-wrap">
+				<div id="content">
+					<?php
+					echo $content_for_layout;
+					?>
 
-			<div class="main-content">
-				<div class="content">
-					<?php echo $content_for_layout; ?>
 				</div>
 				<div id="sidebar">
 					<?php if (count($upcoming_shows) > 0): ?>
@@ -195,21 +215,6 @@ $(document).ready(function(){
 				<a href="https://plus.google.com/105803995139839983242" rel="publisher">Google+</a> <a href="https://www.facebook.com/theasstereoidiots">Facebook</a> | <?php echo $this->Html->link('Datenschutz', array('controller' => 'pages', 'action' => 'display', 'privacy', 'admin' => false)); ?>
 			</div>
 		</div>
-
-		<script>
-		var header = document.querySelector('.main-header');
-		var mood = document.querySelector('.mood');
-		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-		var h1 = h - header.offsetHeight;
-		console.log(h);
-		console.log(h1);
-		
-
-		mood.style.height = h1 + 'px';
-		mood.style.maxHeight = h1 + 'px';
-
-		</script>
-
 		<script>
 
 		var gaProperty = 'UA-61857113-1';

@@ -12,7 +12,7 @@
 	</ul>
 </fieldset>
 
-<p><?php echo __('Visit The Asstereoidiots at %s for more music and album download', $this->Html->link('Jamendo', 'http://www.jamendo.com/de/artist/The_Asstereoidiots')); ?></p>
+<p><?php echo __('Visit The Asstereoidiots at %s for more music and album download', $this->Html->link('Jamendo', 'https://www.jamendo.com/artist/355897/the-asstereoidiots')); ?></p>
 
 
 <fieldset>

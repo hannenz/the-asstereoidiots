@@ -20,8 +20,6 @@ class AppController extends Controller {
 
 	var $email_delivery = 'smtp';
 
-	public $theme = 'Idiotic';
-
 	//public $theme = 'Stadium';
 
 	function beforeFilter(){
@@ -40,7 +38,7 @@ class AppController extends Controller {
 			$this->L10n->get();
 			$lang = Configure::read('Config.language');
 		}
-		$locale = ($lang == 'deu') ? 'de_DE.utf8' : 'en_US.utf8';
+		$locale = ($lang == 'eng') ? 'en_US.utf8' : 'de_DE.utf8';
 		setlocale(LC_ALL, $locale);
 
 		if ($this->request->is('ajax')){
