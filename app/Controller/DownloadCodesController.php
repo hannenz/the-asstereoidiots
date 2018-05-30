@@ -19,10 +19,8 @@ class DownloadCodesController extends AppController {
 				$this->Session->setFlash ('Das sieht mir aber mal gaaar nicht nach einem g&uuml;tigen Code aus, Freund Nase!');
 			}
 			else {
-				$code = $this->DownloadCode->find ('first', [
-					'hash' => 'SHA2('.$this->data['DownloadCode']['code'].')',
-					'used' => false
-				]);
+				$code = $this->DownloadCode->query (sprintf ("SELECT * FROM download_codes AS DownloadCode WHERE hash=SHA2('%s', 384) AND used=0 LIMIT 1", $this->data['DownloadCode']['code']));
+				$code = $code[0];
 				$code['DownloadCode']['used'] = true;
 				$code['DownloadCode']['used_date'] = date('Y-m-d H:i:s');
 				$code['DownloadCode']['code'] = $this->data['DownloadCode']['code'];
@@ -39,7 +37,6 @@ class DownloadCodesController extends AppController {
 			die ("So nicht, Freund Nase!");
 		}
 	}
-
 
 	public function download () {
 		if (!$this->Session->check ('download_allowed')) {
