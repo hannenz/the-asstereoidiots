@@ -3,7 +3,7 @@
 	<head>
 		<?php echo $this->Html->charset(); ?>
 		<title>
-			Idiotic: <?php echo $title_for_layout; ?>
+			[Dirty] <?php echo $title_for_layout; ?>
 		</title>
 		<meta name="viewport" content="width=device-with,initial-scale=1,user-scalable=no" />
 		<?php
@@ -24,38 +24,30 @@
 			echo $this->Html->meta(array('property' => 'og:description', 'content' => $og_description));
 
 			echo $this->Html->css(array(
-				'normalize',
 				'/dist/css/main'
 			));
-		?>
-		<?php
-			// echo $this->Html->script(array(
-			// 	'jquery.min',
-			// 	'jquery-ui.custom.min',
-			// 	'jquery.form.cookie.min',
-			// ));
-			// echo $scripts_for_layout;
+
+			echo $this->Html->script(array(
+				'jquery.min.js'
+			));
 		?>
 	</head>
-	<body>
-		<div class="intro">
-		</div>
+	<body class="downloadcode">
 
-		<div class="logo" style="background-image:url(/img/logo.svg);"></div>
-
-		<nav class="main-nav">
-			<?php echo $this->Html->link ('Shows', ['controller' => 'shows', 'action' => 'index']); ?>
-			<?php echo $this->Html->link ('Band', ['controller' => 'pages', 'action' => 'display', 'band']); ?>
-			<?php echo $this->Html->link ('Media', ['controller' => 'media', 'action' => 'index']); ?>
-			<?php echo $this->Html->link ('Contact', ['controller' => 'pages', 'action' => 'display', 'contact']); ?>
-		</nav>
-
-		<section id="shows">
+		<div class="outer-container">
 			<div class="container">
-<?php echo $this->Session->flash (); ?>
-				<?php echo $content_for_layout; ?>
+				<div class="main-content">
+					<?php echo $content_for_layout; ?>
+				</div>
+
+				<footer class="main-footer">
+					<nav class="footer-nav">
+						<?php echo $this->Html->link ('Impressum', ['controller' => 'pages', 'action' => 'display', 'impressum']); ?>
+						<?php echo $this->Html->link ('Datenschutz', ['controller' => 'pages', 'action' => 'display', 'privacy']); ?>
+					</nav>
+				</footer>
 			</div>
-		</section>
+		</div>
 		
 		<script src="/js/main.js"></script>
 	</body>

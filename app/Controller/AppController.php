@@ -26,6 +26,7 @@ class AppController extends Controller {
 
 		parent::beforeFilter();
 
+
 		$this->L10n = new L10n();
 		$this->L10n->get();
 

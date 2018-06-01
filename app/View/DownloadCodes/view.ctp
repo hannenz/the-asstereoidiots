@@ -1,2 +1,5 @@
-<h1>Ha ja!</h1>
-<?php echo $this->Html->link ('Gib mir jetzt endlich die scheiss mp3s', ['controller' => 'download_codes', 'action' => 'download'], ['class' => 'button', 'target' => '_blank']);?>
+<div class="downloadcode-form">
+	<?php echo $this->Html->image ('/dist/img/dirty_rock_cover.jpg', ['class' => 'cover']); ?>
+
+	<?php echo $this->Html->link ('Click here to download your files', ['controller' => 'download_codes', 'action' => 'download'], ['class' => 'button', 'target' => '_blank']);?>
+</div>

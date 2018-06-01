@@ -1,0 +1,51 @@
+{
+  "name": "the-asstereoidiots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/hannenz/the-asstereoidiots.git"
+  },
+  "author": "johannes.braun@hannenz.de",
+  "license": "MIT",
+  "copyright": "Johannes Braun",
+  "devDependencies": {
+    "bourbon": "^5.0.0",
+    "bourbon-neat": "^1.9.0",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "flickity": "^2.0.11",
+    "flickity-bg-lazyload": "^1.0.0",
+    "flickity-imagesloaded": "^2.0.0",
+    "git-rev-sync": "^1.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-buster": "^1.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-header": "^1.8.9",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jsvalidate": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "imagesloaded": "^4.1.4",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1"
+  },
+  "project_settings": {
+    "prefix": "./dist/"
+  },
+  "dependencies": {}
+}

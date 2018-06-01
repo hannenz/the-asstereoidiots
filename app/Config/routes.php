@@ -9,7 +9,6 @@ Router::connect('/login',		array('controller' => 'users', 'action' => 'login'));
 Router::connect('/impressum',		array('controller' => 'pages', 'action' => 'display', 'impressum'));
 Router::connect('/music',		array('controller' => 'releases', 'action' => 'index'));
 Router::connect('/videos',		array('controller' => 'videos', 'action' => 'index'));
-Router::connect('/dirty-rock',		array('controller' => 'download_codes', 'action' => 'index'));
 
 //route to switch locale
 Router::connect('/lang/*', array('controller' => 'p28n', 'action' => 'change'));
@@ -37,6 +36,24 @@ Router::connect('/shows/:slug', array(
 	));
 
 Router::connect('/tram', array('plugin' => 'tram', 'controller' => 'orders', 'action' => 'index', 'admin' => false));
+
+// Dirty-Rock: Download codes
+
+// Variant 1: Without trailing slash
+Router::connect ('/dirty-rock', ['controller' => 'download_codes', 'action' => 'index']);
+
+// Variant 2: Without trailing slash and/or following code directly passed in URL
+Router::connect(
+	'/dirty-rock/:code',
+	[
+		'controller' => 'download_codes',
+		'action' => 'index'
+	],
+	[
+		'pass' => [ 'code' ],
+		'code' => '([a-zA-Z0-9]{8})?'
+	]
+);
 
 Router::parseExtensions('rss', 'xml', 'csv');
 
