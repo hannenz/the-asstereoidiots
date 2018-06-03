@@ -40,11 +40,11 @@ Router::connect('/tram', array('plugin' => 'tram', 'controller' => 'orders', 'ac
 // Dirty-Rock: Download codes
 
 // Variant 1: Without trailing slash
-Router::connect ('/dirty-rock', ['controller' => 'download_codes', 'action' => 'index']);
+Router::connect ('/dirty', ['controller' => 'download_codes', 'action' => 'index']);
 
 // Variant 2: Without trailing slash and/or following code directly passed in URL
 Router::connect(
-	'/dirty-rock/:code',
+	'/dirty',
 	[
 		'controller' => 'download_codes',
 		'action' => 'index'

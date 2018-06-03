@@ -1,24 +1,22 @@
 @import "settings";
 @import "bourbon";
-@import "neat";
+// @import "neat";
 
 @include font-face ('Miso', '../fonts/miso-light-webfont', $file-formats: woff2) {
 	font-weight: 200;
 	font-style: normal;
 }
 
+@include font-face ('Miso', '../fonts/miso-regular-webfont', $file-formats: woff2) {
+	font-weight: normal;
+	font-style: normal;
+}
 
+@include font-face ('Miso', '../fonts/miso-bold-webfont', $file-formats: woff2) {
+	font-weight: bold;
+	font-style: normal;
+}
 
-// @include font-face ('Miso', '../fonts/miso-regular-webfont', $file-formats: woff2) {
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-//
-// @include font-face ('Miso', '../fonts/miso-bold-webfont', $file-formats: woff2) {
-// 	font-weight: bold;
-// 	font-style: normal;
-// }
-//
 @mixin button-reset {
 	padding: 0;
 	border: none;
@@ -60,7 +58,6 @@
 }
 
 html, body {
-	// min-height: 100%;
 	min-height: 100%;
 	height: 100%;
 }
@@ -97,23 +94,28 @@ body {
 		&:hover {
 			// background-color: $text-color;
 			// color: #fff;
-				text-decoration: underline;
+			text-decoration: underline;
 		}
 	}
 }
 
-.footer-nav {
-	margin: 0;
-	a {
-		font-size: 15px;
+.main-footer {
+
+	font-size: 15px;
+	color: $light-grey;
+
+	.footer-nav {
 		margin: 0;
-		color: $light-grey;
+		a {
+			margin: 0;
+			font-size: 15px;
+		}
 	}
 }
 
 .container {
 	max-width: 40em;
-	min-width: 320px;
+	// min-width: 320px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -127,7 +129,7 @@ img {
 
 	&.cover {
 		width: 400px;
-		max-width: 600px;
+		max-width: 100%;
 		margin: 0 auto 3rem auto;
 		display: block;
 		height: auto;
@@ -136,6 +138,7 @@ img {
 
 .downloadcode {
 	.container {
+		// width: 400px;
 		height: 100%;
 		text-align: center;
 	}
@@ -154,7 +157,7 @@ img {
 		font-family: Miso, monospace;
 		text-align: center;
 		// width: 8ch;
-		max-width: 100%;
+		max-width: 10ch;
 		margin: 0.75rem auto;
 		text-transform: uppercase;
 		border: 0;
@@ -167,10 +170,7 @@ img {
 		&:invalid {
 			background-color: firebrick;
 			color: #fff;
-		// }
-        //
-		// &.invalid {
-			animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+			animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 		}
 
 		&.valid {
@@ -181,7 +181,19 @@ img {
 
 	label {
 		text-transform: uppercase;
+		color: $text-color;
+	}
+
+	.info {
 		color: $light-grey;
+
+		a {
+			color: $light-grey;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.button,
@@ -200,7 +212,7 @@ img {
 
 		transition: 150ms ease-out;
 
-		display: block;
+		// display: block;
 
 		svg {
 			display: none;
@@ -209,6 +221,11 @@ img {
 		span {
 			display: inline-block;
 		}
+	}
+
+	[type=submit][disabled] {
+		opacity: 0;
+		cursor: not-allowed;
 	}
 
 	.error-message {
@@ -230,23 +247,32 @@ img {
 			opacity: 0.2;
 		}
 	}
+}
 
+#flashMessage {
+	&.error, &.message {
+		border: 2px solid firebrick;
+		color: firebrick;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: inline-block;
+	}
 }
 
 @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
+	}
 }

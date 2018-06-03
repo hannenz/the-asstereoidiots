@@ -59,28 +59,38 @@ class DownloadCodesController extends AppController {
 	
 	public function view () {
 		if (!$this->Session->check ('download_allowed')) {
-			die ("So nicht, Freund Nase!");
+			$this->Session->setFlash ('So nicht, Freund Nase!');
+			$this->redirect ('index');
 		}
 	}
 
 	public function download () {
 		if (!$this->Session->check ('download_allowed')) {
-			die ("So nicht, Freund Nase!");
+			$this->Session->setFlash ('So nicht, Freund Nase!');
+			$this->redirect ('index');
 		}
 		$this->viewClass = 'Media';
+
+		$id = 'The_Asstereoidiots_Dirty_Rock_MP3_128k.zip';
+		$name = 'The_Asstereoidiots_Dirty_Rock_MP3_128k';
 		$params = [
-			'id' => 'dirty_rock.zip',
-			'name' => 'DirtyRock',
+			'id' => $id,
+			'name' => $name,
 			'download' => true,
 			'extension' => 'zip',
 			'path' => APP . 'downloads' . DS 
 		];
 		$this->set ($params);
-		$this->Session->delete ('download_allowed');
+		// $this->Session->delete ('download_allowed');
 	}
 
 	public function admin_index () {
 
+	}
+
+	public function admin_print () {
+		$codes = $this->DownloadCode->find ('all');
+		$this->set ('codes', $codes);
 	}
 }
 ?>

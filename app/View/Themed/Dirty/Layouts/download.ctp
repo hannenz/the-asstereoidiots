@@ -36,11 +36,13 @@
 
 		<div class="outer-container">
 			<div class="container">
+					<?php echo $this->Session->flash (); ?>
 				<div class="main-content">
 					<?php echo $content_for_layout; ?>
 				</div>
 
 				<footer class="main-footer">
+					<p class="info">Probleme beim Download? Mail an <a href="mailto:info@the-asstereoidiots.de">info@the-asstereoidiots.de</a></p>
 					<nav class="footer-nav">
 						<?php echo $this->Html->link ('Impressum', ['controller' => 'pages', 'action' => 'display', 'impressum']); ?>
 						<?php echo $this->Html->link ('Datenschutz', ['controller' => 'pages', 'action' => 'display', 'privacy']); ?>
@@ -49,6 +51,6 @@
 			</div>
 		</div>
 		
-		<script src="/js/main.js"></script>
+		<?php echo $this->Html->script ('/dist/js/main.min', []); ?>
 	</body>
 </html>

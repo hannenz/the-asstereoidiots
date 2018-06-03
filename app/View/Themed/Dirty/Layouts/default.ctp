@@ -54,6 +54,6 @@
 			<?php echo $content_for_layout; ?>
 		</div>
 		
-		<script src="/js/main.js"></script>
+		<script src="/dist/js/main.min.js"></script>
 	</body>
 </html>
