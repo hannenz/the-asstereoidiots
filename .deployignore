@@ -1,0 +1,11 @@
+database.php
+deploy.sh
+.deployignore
+app/tmp/
+.git*
+webroot/src/
+node_modules
+package.json
+package-lock.json
+asscodes
+
