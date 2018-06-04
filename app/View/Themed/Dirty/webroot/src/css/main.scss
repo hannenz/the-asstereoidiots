@@ -1,103 +1,12 @@
 @import "settings";
+
 @import "bourbon";
 // @import "neat";
 
-@include font-face ('Miso', '../fonts/miso-light-webfont', $file-formats: woff2) {
-	font-weight: 200;
-	font-style: normal;
-}
-
-@include font-face ('Miso', '../fonts/miso-regular-webfont', $file-formats: woff2) {
-	font-weight: normal;
-	font-style: normal;
-}
-
-@include font-face ('Miso', '../fonts/miso-bold-webfont', $file-formats: woff2) {
-	font-weight: bold;
-	font-style: normal;
-}
-
-@mixin button-reset {
-	padding: 0;
-	border: none;
-	font: inherit;
-	color: inherit;
-	background-color: transparent;
-	cursor: pointer;
-}
-
-@mixin button {
-	border: 2px solid $text-color;
-	background-color: $text-color;
-	color: #fff;
-	padding: 0 0.25em;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 0;
-	transition: 150ms;
-	&:active {
-		transform: translateY (1px);
-		filter: saturate (75%);
-	}
-
-	&:hover,
-	&:focus {
-		background-color: #fff;
-		color: $text-color;
-
-		svg {
-			fill: currentColor;
-		}
-	}
-}
-
-*, *::before, *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html, body {
-	min-height: 100%;
-	height: 100%;
-}
-
-body {
-	font-family: Miso, sans-serif;
-	font-size: 22px;
-	line-height: 1.35em;
-	font-weight: normal;
-	font-style: normal;
-}
-
-.outer-container {
-	border: 3px solid $black;
-	margin: 10px;
-	padding: 1rem;
-	height: calc(100vh - 20px);
-}
-
-.main-nav, .footer-nav {
-	display: flex;
-	justify-content: center;
-	margin: 0 0 3rem 0;
-
-	a {
-		display: inline-block;
-		text-transform: uppercase;
-		color: $text-color;
-		text-decoration: none;
-		margin: 0 1em;
-		font-size: 28px;
-		padding: 0 0.25em;
-
-		&:hover {
-			// background-color: $text-color;
-			// color: #fff;
-			text-decoration: underline;
-		}
-	}
-}
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/nav";
 
 .main-footer {
 
@@ -111,14 +20,6 @@ body {
 			font-size: 15px;
 		}
 	}
-}
-
-.container {
-	max-width: 40em;
-	// min-width: 320px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
 }
 
 img {

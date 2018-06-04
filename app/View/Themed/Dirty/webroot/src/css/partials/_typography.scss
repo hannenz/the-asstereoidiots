@@ -1,0 +1,29 @@
+/**
+ * View/Themed/Dirty/webroot/src/css/partials/_typography.scss
+ *
+ * @author Johannes Braun <johannes.braun@hannenz.de.>
+ * @package dirtyrock
+ */
+@include font-face ('Miso', '../fonts/miso-light-webfont', $file-formats: woff2) {
+	font-weight: 200;
+	font-style: normal;
+}
+
+@include font-face ('Miso', '../fonts/miso-regular-webfont', $file-formats: woff2) {
+	font-weight: normal;
+	font-style: normal;
+}
+
+@include font-face ('Miso', '../fonts/miso-bold-webfont', $file-formats: woff2) {
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Miso', sans-serif;
+	font-size: 22px;
+	line-height: 1.35em;
+	font-weight: normal;
+	font-style: normal;
+}
+

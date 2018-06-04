@@ -1,0 +1,30 @@
+/**
+ * View/Themed/Dirty/webroot/src/css/partials/_nav.scss
+ *
+ * @author Johannes Braun <johannes.braun@hannenz.de>
+ * @package dirtyrock
+ */
+.main-nav,
+.footer-nav {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 3rem 0;
+
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+		color: $text-color;
+		text-decoration: none;
+		margin: 0 1em;
+		font-size: 28px;
+		padding: 0 0.25em;
+
+		&:hover {
+			// background-color: $text-color;
+			// color: #fff;
+			text-decoration: underline;
+		}
+	}
+}
+
+

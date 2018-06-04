@@ -1,0 +1,44 @@
+/**
+ * View/Themed/Dirty/webroot/src/css/partials/_buttons.scss
+ *
+ * @author Johannes Braun <johannes.braun@hannenz.de>
+ * @package dirtyrock
+ */
+@mixin button-reset {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+@mixin button {
+	border: 2px solid $text-color;
+	background-color: $text-color;
+	color: #fff;
+	padding: 0 0.25em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 0;
+	transition: 150ms;
+	box-decoration-break: clone;
+	display: inline-block;
+
+	&:active {
+		transform: translateY (1px);
+		filter: saturate (75%);
+	}
+
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		color: $text-color;
+
+		svg {
+			fill: currentColor;
+		}
+	}
+}
+
+

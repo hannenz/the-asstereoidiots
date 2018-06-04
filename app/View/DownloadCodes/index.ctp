@@ -4,7 +4,7 @@
 		[
 			'class' => 'cover',
 			'width' => '600',
-			'height' => '600'
+			'height' => '605'
 		]);
 	echo $this->Form->create (
 		'DownloadCode', 
