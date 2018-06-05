@@ -20,7 +20,6 @@ $(function () {
 		ev.preventDefault ();
 
 		data = $form.serialize ();
-		console.log (data);
 		$input.attr('disabled', true);
 		$form.addClass ('busy');
 
@@ -35,10 +34,15 @@ $(function () {
 				var response = JSON.parse (_response);
 
 				if (response['success']) {
-					$input.addClass ('valid');
-					var $btn = $('<a href="/download_codes/download">Click here to download your files</a>');
-					$btn.addClass ('button');
-					$submitBtn.replaceWith ($btn);
+					// $input.addClass ('valid');
+					// var $btn = $('<a href="/download_codes/download">Click here to download your files</a>');
+					// $btn.addClass ('button');
+					// $submitBtn.replaceWith ($btn);
+
+					$.get ('/download_codes/download', function (_response) {
+						$newForm = $(_response).find ('form');
+						$newForm.insertAfter ($form);
+					});
 				}
 				else {
 					$input.addClass('invalid');

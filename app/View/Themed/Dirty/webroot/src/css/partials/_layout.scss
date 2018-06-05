@@ -34,6 +34,13 @@ img {
 	width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+	.outer-container {
+		margin: 0;
+		border: none;
+	}
+}
+
 .container {
 	max-width: 40em;
 	margin: 0 auto;

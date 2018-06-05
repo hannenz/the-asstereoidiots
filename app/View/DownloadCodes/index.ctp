@@ -1,11 +1,15 @@
 <div class="downloadcode-form">
-	<?php echo $this->Html->image (
-		'/dist/img/dirty_rock_cover.jpg', 
-		[
-			'class' => 'cover',
-			'width' => '600',
-			'height' => '605'
-		]);
+	<figure class="cover">
+		<?php echo $this->Html->image (
+			'/dist/img/dirty_rock_cover.jpg', 
+			[
+				'class' => 'cover',
+				'width' => '400',
+				'height' => '403'
+			]);
+		?>
+	</figure>
+	<?php
 	echo $this->Form->create (
 		'DownloadCode', 
 		[
