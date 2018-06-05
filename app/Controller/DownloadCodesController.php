@@ -41,19 +41,21 @@ class DownloadCodesController extends AppController {
 			}
 			else {
 				$code = $this->DownloadCode->query (sprintf ("SELECT * FROM download_codes AS DownloadCode WHERE hash=SHA2('%s', 384) AND used=0 LIMIT 1", $this->request->data['DownloadCode']['code']));
-				$code = $code[0];
-				$code['DownloadCode']['used'] = true;
-				$code['DownloadCode']['used_date'] = date('Y-m-d H:i:s');
-				$code['DownloadCode']['code'] = $this->request->data['DownloadCode']['code'];
-				$this->DownloadCode->save ($code);
-				/*  TODO: What if saving fails? */
-				$this->Session->write ('download_allowed', true);
+				if (!empty ($code[0])) {
+					$code = $code[0];
+					$code['DownloadCode']['used'] = true;
+					$code['DownloadCode']['used_date'] = date('Y-m-d H:i:s');
+					$code['DownloadCode']['code'] = $this->request->data['DownloadCode']['code'];
+					$this->DownloadCode->save ($code);
+					/*  TODO: What if saving fails? */
+					$this->Session->write ('download_allowed', true);
 
-				if ($this->request->isAjax ()) {
-					die (json_encode (['success' => true]));
+					if ($this->request->isAjax ()) {
+						die (json_encode (['success' => true]));
+					}
+
+					$this->redirect (['action' => 'download']);
 				}
-
-				$this->redirect (['action' => 'download']);
 			}
 		}
 	}
