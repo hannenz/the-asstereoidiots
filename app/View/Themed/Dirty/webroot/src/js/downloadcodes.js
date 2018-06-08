@@ -34,12 +34,14 @@ $(function () {
 				var response = JSON.parse (_response);
 
 				if (response['success']) {
-					// $input.addClass ('valid');
+					$input.addClass ('valid');
+
 					// var $btn = $('<a href="/download_codes/download">Click here to download your files</a>');
 					// $btn.addClass ('button');
 					// $submitBtn.replaceWith ($btn);
+					$submitBtn.attr ('disabled', true);
 
-					$.get ('/download_codes/download', function (_response) {
+					$.get ('/download_codes/choose', function (_response) {
 						$newForm = $(_response).find ('form');
 						$newForm.insertAfter ($form);
 					});

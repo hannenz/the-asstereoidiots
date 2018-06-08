@@ -8,7 +8,8 @@ class DownloadCodesController extends AppController {
 
 	public function beforeFilter () {
 		parent::beforeFilter ();
-		$this->Auth->allow ('download');
+		$this->Auth->allow (['download', 'choose', 'done']);
+
 	}
 
 	public function index () {
@@ -16,7 +17,7 @@ class DownloadCodesController extends AppController {
 
 		// Check if user has already validated a code and redirect to download page immediately if so
 		if ($this->Session->check ('download_allowed')) {
-			$this->redirect ('download');
+			$this->redirect ('choose');
 		}
 
 
@@ -54,7 +55,7 @@ class DownloadCodesController extends AppController {
 						die (json_encode (['success' => true]));
 					}
 
-					$this->redirect (['action' => 'download']);
+					$this->redirect (['action' => 'choose']);
 				}
 			}
 		}
@@ -62,7 +63,7 @@ class DownloadCodesController extends AppController {
 	
 
 
-	public function download () {
+	public function choose () {
 
 		if (!$this->Session->check ('download_allowed')) {
 			$this->Session->setFlash ('So nicht, Freund Nase!');
@@ -70,40 +71,66 @@ class DownloadCodesController extends AppController {
 		}
 
 		if (!empty ($this->request->data)) {
-			$this->viewClass = 'Media';
+			$this->Session->write ('type', $this->request->data['DownloadCode']['type']);
 
-			switch ($this->request->data['DownloadCode']['type']) {
-				case 'mp3-lo':
-					$id = 'The_Asstereoidiots_Dirty_Rock_MP3_128k.zip';
-					$name = 'The_Asstereoidiots_Dirty_Rock_MP3_128k';
-					break;
-				case 'mp3-hi':
-					$id = 'The_Asstereoidiots_Dirty_Rock_MP3_192k.zip';
-					$name = 'The_Asstereoidiots_Dirty_Rock_MP3_192k';
-					break;
-				case 'flac':
-					$id = 'The_Asstereoidiots_Dirty_Rock_FLAC.zip';
-					$name = 'The_Asstereoidiots_Dirty_Rock_FLAC';
-					break;
-				default:
-					// TODO: Some sort of error handling here
-			}
+			$this->redirect (['action' => 'done', ]);
 
-			$params = [
-				'id' => $id,
-				'name' => $name,
-				'download' => true,
-				'extension' => 'zip',
-				'path' => APP . 'downloads' . DS 
-			];
-			$this->set ($params);
 			// $this->Session->delete ('download_allowed');
 		}
 	}
 
-	// public function admin_index () {
-    //
-	// }
+	public function done () {
+		if (!$this->Session->check ('download_allowed')) {
+			$this->Session->setFlash ('So nicht, Freund Nase!');
+			$this->redirect ('index');
+		}
+
+		// Intentionally empty: Just render template, which will
+		// trigger a redirect to download action!
+		
+	}
+
+	public function download ($type) {
+		if (!$this->Session->check ('download_allowed')) {
+			$this->Session->setFlash ('So nicht, Freund Nase!');
+			$this->redirect ('index');
+		}
+
+		if (!$this->Session->check ('type')) {
+			$this->redirect ('choose');
+		}
+		$type = $this->Session->read ('type');
+
+
+		switch ($type) {
+			case 'mp3-lo':
+				$id = 'The_Asstereoidiots_Dirty_Rock_MP3_128k.zip';
+				$name = 'The_Asstereoidiots_Dirty_Rock_MP3_128k';
+				break;
+			case 'mp3-hi':
+				$id = 'The_Asstereoidiots_Dirty_Rock_MP3_192k.zip';
+				$name = 'The_Asstereoidiots_Dirty_Rock_MP3_192k';
+				break;
+			case 'flac':
+				$id = 'The_Asstereoidiots_Dirty_Rock_FLAC.zip';
+				$name = 'The_Asstereoidiots_Dirty_Rock_FLAC';
+				break;
+			default:
+				$this->redirect ('choose');
+				break;
+		}
+
+		$this->viewClass = 'Media';
+		$params = [
+			'id' => $id,
+			'name' => $name,
+			'download' => true,
+			'extension' => 'zip',
+			'path' => APP . 'downloads' . DS 
+		];
+		$this->set ($params);
+	}
+
 
 	public function admin_print () {
 		$codes = $this->DownloadCode->find ('all');

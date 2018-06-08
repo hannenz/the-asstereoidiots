@@ -77,6 +77,8 @@ img {
 	.main-content {
 		flex: 1 0 auto;
 		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.downloadcode-form {
@@ -206,6 +208,12 @@ img {
 				// font-size: 10px;
 				color: $light-grey;
 				font-size: inherit;
+
+				@media screen and (max-width: 479px) {
+					display: block;
+					line-height: 1;
+					padding-bottom: 3px;
+				}
 			}
 
 			&:first-of-type {
@@ -221,6 +229,20 @@ img {
 				color: #fff;
 			}
 		}
+	}
+}
+
+.thank-you {
+	> span {
+		font-size: 1.5em;
+		display: inline;
+		box-decoration-break: clone;
+		color: #fff;
+		background-color: $text-color;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		padding: 0 0.3333em;
+		line-height: 1.25;
 	}
 }
 
