@@ -99,7 +99,7 @@ class UploadableBehavior extends ModelBehavior {
  *
  * name: beforeSave
  */
-	function beforeSave(Model $Model){
+	function beforeSave(Model $Model, $options = []){
 
 		$Model->uploadErrors = null;
 		$Model->wasUploading = false;
@@ -165,7 +165,7 @@ class UploadableBehavior extends ModelBehavior {
  *
  * name: afterSave
  */
-	function afterSave(Model $Model, $created){
+	function afterSave(Model $Model, $created, $options = []){
 		if ($created){
 			$this->Upload->savePending($Model->id);
 		}

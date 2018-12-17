@@ -3,7 +3,7 @@ class DownloadCodesController extends AppController {
 
 	public $name = 'DownloadCodes';
 	public $helpers = array ('Html', 'Form');
-	public $theme = 'Dirty';
+	public $theme = 'DirtyRock';
 	public $layout = 'download';
 
 	public function beforeFilter () {

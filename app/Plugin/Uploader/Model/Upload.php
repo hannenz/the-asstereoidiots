@@ -215,7 +215,7 @@ class Upload extends AppModel {
  *
  * name: afterSave
  */
-	function afterSave($created){
+	function afterSave($created, $options = []){
 		// Backup the current Id (important!)
 		$backId = $this->id;
 

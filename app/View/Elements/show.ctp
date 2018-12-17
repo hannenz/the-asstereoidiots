@@ -1,5 +1,5 @@
 <?php
-	$upcoming = strtotime($show['Show']['showtime']) >= mktime();
+	$upcoming = strtotime($show['Show']['showtime']) >= time();
 	//~ $settings = Configure::read('settings');
 	$bands = array();
 	foreach ($show['Band'] as $band){

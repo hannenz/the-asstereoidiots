@@ -7,5 +7,5 @@
 			<?php echo $this->element('editdelete', array('name' => $link['User']['username'], 'id' => $link['Link']['id'], 'date' => $link['Link']['created']))?>
 			</p>
 		</li>
-	<? endforeach ?>
+	<?php endforeach ?>
 </ul>
